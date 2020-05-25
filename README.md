@@ -1,2 +1,2 @@
 # EEB
-Libreria di simulazione a support del progeto EEB
+Libreria di simulazione a supporto del progeto EEB
