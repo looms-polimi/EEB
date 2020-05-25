@@ -1,2 +1,2 @@
 # EEB
-Libreria di simulazione a supporto del progeto EEB
+Libreria di mdoelli per la simulazione dinamica a supporto del progetto EEB.
