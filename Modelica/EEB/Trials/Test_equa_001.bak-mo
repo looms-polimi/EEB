@@ -1,0 +1,78 @@
+within BuildingsAndPlants.Trials;
+
+model Test_equa_001
+  BuildingsAndPlants.Components.BaseComponents.Water.Pumps.WaterPump_Volumetric Pump(qmax = 0.001) annotation(
+    Placement(visible = true, transformation(origin = {-90, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Water.Pipes.WaterPipeExchanging_Nvols pipe1(Tstart(displayUnit = "K") = 293.15, n = 10) annotation(
+    Placement(visible = true, transformation(origin = {-8, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Water.Pipes.WaterPipeExchanging_Nvols pipe2(Tstart = 293.15) annotation(
+    Placement(visible = true, transformation(origin = {-8, -30}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.AggregateComponents.Heating.IdealControlledFluidHeater Heater(Tfo(displayUnit = "K"), Tstart = 293.15)  annotation(
+    Placement(visible = true, transformation(origin = {-130, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Water.Pipes.WaterPipeExchanging_Nvols pipe3(Tstart = 293.15) annotation(
+    Placement(visible = true, transformation(origin = {44, -10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Water.Valves.WaterValve_LinChar V(cvmax = 1000) annotation(
+    Placement(visible = true, transformation(origin = {-48, -30}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Water.Pressurisers.IdealWaterPressuriser_pfixed press annotation(
+    Placement(visible = true, transformation(origin = {-130, -50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Sources.RealExpression TSP(y = 298) annotation(
+    Placement(visible = true, transformation(origin = {-174, 14}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Sources.BooleanExpression HeaterOn(y = time > 200)  annotation(
+    Placement(visible = true, transformation(origin = {-170, 50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Sources.RealExpression pumpcmd(y = 0.8) annotation(
+    Placement(visible = true, transformation(origin = {-124, 50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  Modelica.Blocks.Sources.RealExpression valvecmd(y = if time < 100 then 0 else 0.6) annotation(
+    Placement(visible = true, transformation(origin = {-96, -24}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV pipe2air(S = 5, gamma = 10, n = 10) annotation(
+    Placement(visible = true, transformation(origin = {-8, 36}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Air.Volumes.AirVolume_closed air(Tstart(displayUnit = "K"), V = 50, p(displayUnit = "Pa")) annotation(
+    Placement(visible = true, transformation(origin = {-8, 68}, extent = {{-10, 10}, {10, -10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS air2wall(S = 10) annotation(
+    Placement(visible = true, transformation(origin = {30, 50}, extent = {{-10, 10}, {10, -10}}, rotation = -90)));
+  BuildingsAndPlants.Components.BaseComponents.Envelope.SolidMultilayer_Homogeneous wall(T(displayUnit = "K"), Tstart(displayUnit = "K") = 293.15, n = 5) annotation(
+    Placement(visible = true, transformation(origin = {60, 50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  BuildingsAndPlants.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS wall2ext(S = 10) annotation(
+    Placement(visible = true, transformation(origin = {90, 50}, extent = {{-10, 10}, {10, -10}}, rotation = -90)));
+  Modelica.Thermal.HeatTransfer.Sources.FixedTemperature Text(T = 281.15) annotation(
+    Placement(visible = true, transformation(origin = {130, 50}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
+equation
+  connect(Heater.water_flange2, Pump.water_flange1) annotation(
+    Line(points = {{-122, 10}, {-98, 10}}));
+  connect(Pump.water_flange2, pipe1.water_flange1) annotation(
+    Line(points = {{-82, 10}, {-16, 10}}));
+  connect(pipe1.water_flange2, pipe3.water_flange1) annotation(
+    Line(points = {{1.19209e-7, 10}, {22, 10}, {22, -10}, {36, -10}, {36, -10}}));
+  connect(pipe2.water_flange2, pipe3.water_flange1) annotation(
+    Line(points = {{1.19209e-7, -30}, {22, -30}, {22, -10}, {36, -10}, {36, -10}}));
+  connect(Pump.water_flange2, V.water_flange1) annotation(
+    Line(points = {{-82, 10}, {-70, 10}, {-70, -30}, {-56, -30}, {-56, -30}}));
+  connect(V.water_flange2, pipe2.water_flange1) annotation(
+    Line(points = {{-40, -30}, {-16, -30}, {-16, -30}, {-16, -30}}));
+  connect(Heater.water_flange1, press.water_flange1) annotation(
+    Line(points = {{-138, 10}, {-150, 10}, {-150, -50}, {-138, -50}}));
+  connect(press.water_flange2, pipe3.water_flange2) annotation(
+    Line(points = {{-122, -50}, {70, -50}, {70, -10}, {52, -10}, {52, -10}}));
+  connect(HeaterOn.y, Heater.ON) annotation(
+    Line(points = {{-158, 50}, {-148, 50}, {-148, 18}, {-138, 18}, {-138, 16}}, color = {255, 0, 255}));
+  connect(pumpcmd.y, Pump.cmd) annotation(
+    Line(points = {{-112, 50}, {-102, 50}, {-102, 14}, {-96, 14}, {-96, 16}}, color = {0, 0, 127}));
+  connect(valvecmd.y, V.cmd) annotation(
+    Line(points = {{-84, -24}, {-54, -24}, {-54, -22}, {-52, -22}}, color = {0, 0, 127}));
+  connect(Heater.To, TSP.y) annotation(
+    Line(points = {{-138, 14}, {-164, 14}, {-164, 14}, {-162, 14}}, color = {0, 0, 127}));
+  connect(pipe2air.vs, pipe1.heatPort) annotation(
+    Line(points = {{-8, 30}, {-8, 30}, {-8, 16}, {-8, 16}}, color = {255, 0, 0}));
+  connect(air.heatPort, pipe2air.ss) annotation(
+    Line(points = {{-8, 58}, {-8, 58}, {-8, 42}, {-8, 42}}, color = {255, 0, 0}));
+  connect(air.heatPort, air2wall.ss1) annotation(
+    Line(points = {{-8, 58}, {-8, 58}, {-8, 50}, {24, 50}, {24, 50}}, color = {255, 0, 0}));
+  connect(air2wall.ss2, wall.side1) annotation(
+    Line(points = {{36, 50}, {54, 50}, {54, 50}, {54, 50}}, color = {255, 0, 0}));
+  connect(wall.side2, wall2ext.ss1) annotation(
+    Line(points = {{66, 50}, {84, 50}, {84, 50}, {84, 50}}, color = {255, 0, 0}));
+  connect(wall2ext.ss2, Text.port) annotation(
+    Line(points = {{96, 50}, {120, 50}, {120, 50}, {120, 50}}, color = {255, 0, 0}));
+  annotation(
+    Diagram(coordinateSystem(extent = {{-200, -100}, {200, 100}})),
+    experiment(StartTime = 0, StopTime = 4000, Tolerance = 1e-6, Interval = 8));
+end Test_equa_001;
