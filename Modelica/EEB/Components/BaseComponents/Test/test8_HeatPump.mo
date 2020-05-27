@@ -24,5 +24,8 @@ equation
   connect(heatPump_ConstantCOPheat.coldPort, fixedTemperature.port) annotation(Line(points = {{-11, 37.7}, {-11, 22}, {-60, 22}}, color = {0, 0, 0}, smooth = Smooth.None));
   connect(airVolume.air_flange1, airSource_fixed_wTX.air_flange) annotation(Line(points = {{-20, 88}, {-36, 88}}, color = {0, 0, 0}, smooth = Smooth.None));
   connect(airVolume1.air_flange1, airSource_fixed_wTX1.air_flange) annotation(Line(points = {{-10, -12}, {-36, -12}}, color = {0, 0, 0}, smooth = Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics));
+  annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics),
+    experiment(StartTime = 0, StopTime = 1, Tolerance = 1e-6, Interval = 0.002),
+  __OpenModelica_commandLineOptions = "--matchingAlgorithm=PFPlusExt --indexReductionMethod=dynamicStateSelection -d=initialization,evaluateAllParameters,NLSanalyticJacobian,newInst +d=initialization ",
+  __OpenModelica_simulationFlags(lv = "LOG_STATS", outputFormat = "mat", s = "dassl"));
 end test8_HeatPump;

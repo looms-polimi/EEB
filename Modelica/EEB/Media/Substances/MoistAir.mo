@@ -2,12 +2,19 @@ within EEB.Media.Substances;
 model MoistAir "Moist air"
   extends Modelica.Icons.MaterialProperty;
   import MAC = EEB.Media.Constants;
+  parameter Boolean is4cap=false "set true to suggest pTX as states when used in a capacity";
   connector Input_p = input Pressure "pressure";
   connector Input_T = input Temperature "temperature";
   connector Input_X = input MassFraction "absolute humidity [kg vap/kg da]";
-  Input_p p "pressure";
-  Input_T T "temperature";
-  Input_X X "absolute humidity [kg vap/kg da]";
+  Input_p p
+  (stateSelect = if is4cap then StateSelect.prefer else StateSelect.default)
+  "pressure";
+  Input_T T
+  (stateSelect = if is4cap then StateSelect.prefer else StateSelect.default)
+  "temperature";
+  Input_X X
+  (stateSelect = if is4cap then StateSelect.prefer else StateSelect.default)
+  "absolute humidity [kg vap/kg da]";
   //-----------------------------------------------------------------------------
   MassFraction x "vapour mass fraction [kg vap/kg tot]";
   Pressure pv "vapour partial pressure";

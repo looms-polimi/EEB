@@ -14,7 +14,7 @@ model test5_Tank
   Modelica.Blocks.Sources.CombiTimeTable table2(startTime = 2000, table = [0, 0; 100, 0; 100, 1; 150, 1; 150, 0]) annotation(Placement(transformation(extent = {{74, 34}, {58, 50}})));
   Modelica.Electrical.Analog.Ideal.IdealClosingSwitch idealClosingSwitch annotation(Placement(transformation(extent = {{-28, -46}, {-8, -26}})));
   Modelica.Electrical.Analog.Sources.SineVoltage sineVoltage(V = 220, freqHz = 50) annotation(Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = -90, origin = {-52, -60})));
-  Modelica.Blocks.Sources.Constant const(k = 273.15 + 40) annotation(Placement(transformation(extent = {{-98, -22}, {-88, -12}})));
+  Modelica.Blocks.Sources.Constant const(k = 273.15 + 25) annotation(Placement(transformation(extent = {{-98, -22}, {-88, -12}})));
   Modelica.Blocks.Math.Feedback f1 annotation(Placement(transformation(extent = {{-76, -10}, {-62, -24}})));
   Modelica.Blocks.Logical.Hysteresis hysteresis(uLow = -1, uHigh = 1) annotation(Placement(transformation(extent = {{-48, -22}, {-38, -12}})));
 equation
@@ -35,5 +35,8 @@ equation
   connect(volumetricPump.water_flange2, tank.water_flange1) annotation(Line(points = {{-28, 24}, {-20, 24}, {-20, 24}, {-10.8, 24}}, color = {0, 0, 0}, smooth = Smooth.None));
   connect(tank.water_flange2, volumetricPump1.water_flange1) annotation(Line(points = {{14.8, 24}, {32, 24}, {32, 6}, {52, 6}}, color = {0, 0, 0}, smooth = Smooth.None));
   connect(volumetricPump1.water_flange2, sink_P_fixed.water_flange) annotation(Line(points = {{68, 6}, {76, 6}, {76, 8}, {82, 8}}, color = {0, 0, 0}, smooth = Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics));
+  annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics),
+    experiment(StartTime = 0, StopTime = 200, Tolerance = 1e-6, Interval = 0.4),
+  __OpenModelica_commandLineOptions = "--matchingAlgorithm=PFPlusExt --indexReductionMethod=dynamicStateSelection -d=initialization,evaluateAllParameters,NLSanalyticJacobian,newInst +d=initialization ",
+  __OpenModelica_simulationFlags(lv = "LOG_STATS", outputFormat = "mat", s = "dassl"));
 end test5_Tank;

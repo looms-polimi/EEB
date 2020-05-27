@@ -1,6 +1,6 @@
 within EEB.CaseStudies.ABC;
 
-model OneRoom_ExtData_forProjectTests
+model OneRoom_ExtData_forTests
   Real pippo = Room.air.phi * 100;
   EEB.Components.BaseComponents.Air.Volumes.AirVolume Room(V = 50, Xstart = 0.005) annotation(
     Placement(visible = true, transformation(origin = {-2, -84}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -34,7 +34,7 @@ model OneRoom_ExtData_forProjectTests
     Placement(visible = true, transformation(origin = {-184, 70}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Thermal.HeatTransfer.Sources.PrescribedTemperature Text annotation(
     Placement(visible = true, transformation(origin = {92, 52}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.CombiTimeTable InternalData(columns = 2:5, fileName =  Modelica.Utilities.Files.loadResource("modelica://EEB/Resources/TestDEIB_123_July2015_7days_InternalData.txt"), tableName = "data", tableOnFile = true) annotation(
+  Modelica.Blocks.Sources.CombiTimeTable InternalData(columns = 2:5, fileName = Modelica.Utilities.Files.loadResource("modelica://EEB/Resources/TestDEIB_123_July2015_7days_InternalData.txt"), tableName = "data", tableOnFile = true) annotation(
     Placement(visible = true, transformation(origin = {130, -70}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.RealExpression patm(y = 101325) annotation(
     Placement(visible = true, transformation(origin = {-136, -32}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -110,6 +110,8 @@ equation
   connect(dp2.air_flange2, airSink.air_flange) annotation(
     Line(points = {{50, -82}, {72, -82}, {72, -78}, {74, -78}}, color = {0, 100, 150}));
   annotation(
-    Diagram(coordinateSystem(extent = {{-200, -100}, {200, 100}}, initialScale = 0.1), graphics = {Text(origin = {-90, 85}, extent = {{-56, 7}, {56, -7}}, textString = "For project tests")}),
-    experiment(StartTime = 0, StopTime = 300000, Tolerance = 1e-06, Interval = 60.5449));
-end OneRoom_ExtData_forProjectTests;
+    Diagram(coordinateSystem(extent = {{-200, -100}, {200, 100}}, initialScale = 0.1)),
+    experiment(StartTime = 0, StopTime = 300000, Tolerance = 1e-6, Interval = 60.5449),
+  __OpenModelica_commandLineOptions = "--matchingAlgorithm=PFPlusExt --indexReductionMethod=dynamicStateSelection -d=initialization,evaluateAllParameters,NLSanalyticJacobian,newInst +d=initialization ",
+  __OpenModelica_simulationFlags(lv = "LOG_STATS", outputFormat = "mat", s = "dassl"));
+end OneRoom_ExtData_forTests;

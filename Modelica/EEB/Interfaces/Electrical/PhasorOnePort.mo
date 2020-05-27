@@ -3,8 +3,8 @@ partial model PhasorOnePort "Component with two electrical pins p and n and curr
 
   PositivePhasorPin p annotation(
   Placement(transformation(extent = {{80, 40}, {120, 80}}), iconTransformation(extent = {{80, 40}, {120, 80}})));
-  NegativePhasorPin n annotation(
-  Placement(transformation(extent = {{120, -80}, {80, -40}}), iconTransformation(extent = {{120, -80}, {80, -40}})));
+  EEB.Interfaces.Electrical.NegativePhasorPin n annotation(
+  Placement(visible = true,transformation(extent = {{120, -80}, {80, -40}}, rotation = 0), iconTransformation(extent = {{120, -78}, {80, -38}}, rotation = 0)));
   annotation(
   Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics), Icon(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics));
 end PhasorOnePort;

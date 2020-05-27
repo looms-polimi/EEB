@@ -6,10 +6,10 @@ model Tank_adiabaticWall "Tank with wall"
   parameter Volume V = 1 "max contained water volume";
   parameter Volume Vstart = 0.001 "initial water volume";
   parameter Area S = 1 "exchanging surface (inner and outer)";
-  parameter Area Sb = 0.2 "base area for level/pressure BEFORE Sb=0.01";
+  parameter Area Sb = 0.2 "base area for level/pressure";
   parameter Temperature Tstart = 273.15 + 25 "initial temp (fluid and metal)";
   parameter Pressure pin = 0 "mean pressure at the flanges(used in case of a boiler)";
-  Temperature Tf "fluid temperature";
+  Temperature Tf(start=Tstart,stateSelect=StateSelect.prefer) "fluid temperature";
   Mass Mw(start = Vstart * 1000) "Mass of water";
   Pressure p "preassure of water at input, inside and output";
   Energy E;
@@ -19,8 +19,6 @@ model Tank_adiabaticWall "Tank with wall"
   Placement(transformation(extent = {{-90, 66}, {-70, 86}}), iconTransformation(extent = {{80, 40}, {100, 60}})));
   Modelica.Blocks.Interfaces.RealOutput oT "Temperature of water" annotation(
   Placement(transformation(extent = {{-90, 44}, {-70, 64}}), iconTransformation(extent = {{80, -60}, {100, -40}})));
-initial equation
-  Tf = Tstart;
 equation
   // Total mass balance
   der(Mw) = w1 + w2;
@@ -28,7 +26,7 @@ equation
   p = Mw / Sb * Modelica.Constants.g_n + pin;
   p1 = p;
   p1 = p2;
-  water.p = 0.5 * (p1 + p2);
+  water.p =p;
   // Energy balances for the fluid
   der(E) = w1 * actualStream(water_flange1.h) + w2 * actualStream(water_flange2.h) + fluid.Q_flow;
   E = Mw * water.h;

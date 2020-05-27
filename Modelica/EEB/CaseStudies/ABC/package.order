@@ -2,8 +2,8 @@ TableTest
 OneRoom_ExtData
 AirSource_pTphi_prescribed
 OneRoom_ExtData_noAHU
-OneRoom_ExtData_forProjectTests
 ReadFromTM2file
 OneRoom
 TestAirSourcepTphi
 sensor_Tphi
+OneRoom_ExtData_forTests

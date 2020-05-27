@@ -1,10 +1,10 @@
 within EEB.Interfaces.Electrical;
 partial model PhasorTwoPin "Phasor two pins"
 
-  PositivePhasorPin p annotation(
-  Placement(transformation(extent = {{-100, -20}, {-60, 20}}), iconTransformation(extent = {{-100, -20}, {-60, 20}})));
-  NegativePhasorPin n annotation(
-  Placement(transformation(extent = {{60, -20}, {100, 20}}), iconTransformation(extent = {{60, -20}, {100, 20}})));
+  EEB.Interfaces.Electrical.PositivePhasorPin p annotation(
+  Placement(visible = true,transformation(extent = {{-100, -20}, {-60, 20}}, rotation = 0), iconTransformation(extent = {{-120, -20}, {-80, 20}}, rotation = 0)));
+  EEB.Interfaces.Electrical.NegativePhasorPin n annotation(
+  Placement(visible = true,transformation(extent = {{60, -20}, {100, 20}}, rotation = 0), iconTransformation(extent = {{80, -20}, {120, 20}}, rotation = 0)));
   Voltage Vre, Vim;
   Current Ire, Iim;
 equation

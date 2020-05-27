@@ -2,26 +2,23 @@ within EEB.Components.BaseComponents.Air.Volumes;
 
 model AirVolume
   extends Interfaces.Air.PartialTwoPort_waxa;
-  EEB.Media.Substances.MoistAir air;
   parameter Volume V = 0.001 "volume";
   parameter Pressure Pstart = 101325 "Initial moist air pressure";
   parameter Temperature Tstart = 273.15 + 20 "Initial moist air temperature";
   parameter MassFraction Xstart = 0.001 "Initial absolute umidity [kg_H20/kg_DA]";
-  Mass Ma "Total dry air mass";
-  Mass Mv "Total vapour mass";
-  Energy Ea "Energy of the moist air";
-  Pressure p "Pressure of the air";
+  EEB.Media.Substances.MoistAir air(is4cap=true);
+  Mass Ma(stateSelect=StateSelect.avoid) "Total dry air mass";
+  Mass Mv(stateSelect=StateSelect.avoid) "Total vapour mass";
+  Energy Ea(stateSelect=StateSelect.avoid) "Energy of the moist air";
+  Pressure p(start=Pstart);
+  Temperature T(start=Tstart);
+  MassFraction X(start=Xstart);
   Interfaces.Thermal.HeatPort heatPort annotation(
   Placement(transformation(extent = {{-60, 40}, {60, 60}}), iconTransformation(extent = {{-80, 80}, {80, 100}})));
-initial equation
-  air.T = Tstart;
-  air.X = Xstart;
-  air.p = Pstart;
 equation
-  // No pressure drop
-  pa1 = air.p;
-  pa2 = air.p;
   air.p = p;
+  air.T = T;
+  air.X = X;
   // Masses and energy
   Ma + Mv = V * air.d;
   Mv = Ma * air.X;
@@ -32,7 +29,9 @@ equation
   der(Ea) = wa1 * actualStream(air_flange1.ha) + wa2 * actualStream(air_flange2.ha)
             + heatPort.Q_flow;
   // Connector equations
-  air.T = heatPort.T;
+  heatPort.T = T;
+  pa1 = air.p;
+  pa2 = air.p;
   xaout1 = air.X;
   xaout2 = air.X;
   haout1 = air.h;

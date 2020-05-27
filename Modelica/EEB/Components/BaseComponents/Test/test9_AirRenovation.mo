@@ -31,5 +31,8 @@ equation
   connect(airVolume.air_flange2, airSink_P_fixed1.air_flange) annotation(Line(points = {{56.2, 88}, {72, 88}}, color = {0, 0, 0}, smooth = Smooth.None));
   connect(airVolume.air_flange1, airSource_fixed_wTX.air_flange) annotation(Line(points = {{25.8, 88}, {12, 88}}, color = {0, 0, 0}, smooth = Smooth.None));
   connect(airVolume1.air_flange1, airSource_fixed_wTX1.air_flange) annotation(Line(points = {{23.8, -2}, {12, -2}}, color = {0, 0, 0}, smooth = Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics));
+  annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics),
+    experiment(StartTime = 0, StopTime = 1, Tolerance = 1e-6, Interval = 0.002),
+  __OpenModelica_commandLineOptions = "--matchingAlgorithm=PFPlusExt --indexReductionMethod=dynamicStateSelection -d=initialization,evaluateAllParameters,NLSanalyticJacobian,newInst +d=initialization ",
+  __OpenModelica_simulationFlags(lv = "LOG_STATS", outputFormat = "mat", s = "dassl"));
 end test9_AirRenovation;

@@ -8,10 +8,10 @@ partial model PartialTwoPort_waxa "Partial two port waxa"
   SpecificEnthalpy haout2 "Specifc enthalpy";
   MassFraction xaout1 "Absolute humidity [Kg vap/Kg dry air]";
   MassFraction xaout2 "Absolute humidity [Kg vap/Kg dry air]";
-  MoistAirFlange_waxa air_flange1 annotation(
-  Placement(transformation(extent = {{-90, -10}, {-70, 10}}), iconTransformation(extent = {{-100, -20}, {-60, 20}})));
-  MoistAirFlange_waxa air_flange2 annotation(
-  Placement(transformation(extent = {{70, -10}, {90, 10}}), iconTransformation(extent = {{60, -20}, {100, 20}})));
+  EEB.Interfaces.Air.MoistAirFlange_waxa air_flange1 annotation(
+  Placement(visible = true,transformation(extent = {{-90, -10}, {-70, 10}}, rotation = 0), iconTransformation(extent = {{-120, -20}, {-80, 20}}, rotation = 0)));
+  EEB.Interfaces.Air.MoistAirFlange_waxa air_flange2 annotation(
+  Placement(visible = true,transformation(extent = {{70, -10}, {90, 10}}, rotation = 0), iconTransformation(extent = {{80, -20}, {120, 20}}, rotation = 0)));
 equation
   pa1 = air_flange1.pa;
   wa1 = air_flange1.wa;

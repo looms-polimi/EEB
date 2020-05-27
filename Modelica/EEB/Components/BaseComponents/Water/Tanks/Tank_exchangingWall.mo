@@ -13,8 +13,8 @@ model Tank_exchangingWall "Tank with wall"
   parameter Temperature Tstart = 273.15 + 25 "initial temp (fluid and metal)";
   parameter Pressure pin = 0 "mean pressure at the flanges(used in case of a boiler)";
   HeatFlowRate Qwm "water to metal heat rate";
-  Temperature Tf "fluid temperature";
-  Temperature Tm "wall temperature";
+  Temperature Tf(start=Tstart,stateSelect=StateSelect.prefer) "fluid temperature";
+  Temperature Tm(start=Tstart,stateSelect=StateSelect.prefer) "wall temperature";
   Mass Mw(start = Vstart * 1000) "Mass of water";
   Pressure p "preassure of water at input, inside and output";
   Energy E;
@@ -26,9 +26,6 @@ model Tank_exchangingWall "Tank with wall"
   Placement(transformation(extent = {{-90, 66}, {-70, 86}}), iconTransformation(extent = {{80, 40}, {100, 60}})));
   Modelica.Blocks.Interfaces.RealOutput oT "Temperature of water" annotation(
   Placement(transformation(extent = {{-90, 44}, {-70, 64}}), iconTransformation(extent = {{80, -60}, {100, -40}})));
-initial equation
-  Tf = Tstart;
-  Tm = Tstart;
 equation
   // Total mass balance
   der(Mw) = w1 + w2;
