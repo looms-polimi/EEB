@@ -7,5 +7,7 @@ model Test_OfficeBuilding
 equation
   connect(Tground.y, officeBuilding.Tground) annotation(Line(points = {{-45, -22}, {-20, -22}, {-20, -21.2}, {5.12, -21.2}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(Texternal.y, officeBuilding.Texternal) annotation(Line(points = {{-51.4, 36}, {-16, 36}, {-16, 28.44}, {12.32, 28.44}}, color = {0, 0, 127}, smooth = Smooth.None));
-  annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics), experiment(StopTime = 3e+006), __Dymola_experimentSetupOutput(equdistant = false, events = false));
+  annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics), experiment(StopTime = 3e+6, StartTime = 0, Tolerance = 1e-6, Interval = 6000), __Dymola_experimentSetupOutput(equdistant = false, events = false),
+    __OpenModelica_commandLineOptions = "--matchingAlgorithm=PFPlusExt --indexReductionMethod=dynamicStateSelection -d=initialization,evaluateAllParameters,NLSanalyticJacobian,newInst +d=initialization ",
+  __OpenModelica_simulationFlags(lv = "LOG_STATS", outputFormat = "mat", s = "dassl"));
 end Test_OfficeBuilding;
