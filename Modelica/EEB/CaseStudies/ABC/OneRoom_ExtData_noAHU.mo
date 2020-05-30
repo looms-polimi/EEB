@@ -1,7 +1,8 @@
 within EEB.CaseStudies.ABC;
 
 model OneRoom_ExtData_noAHU
-  Real pippo = Room.air.phi * 100;
+  extends Icons.CaseStudyModel;
+  Real phi100 = Room.air.phi * 100;
   EEB.Components.BaseComponents.Air.Volumes.AirVolume Room(V = 50, Xstart = 0.0085) annotation(
     Placement(visible = true, transformation(origin = {-12, -32}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   EEB.Components.BaseComponents.Air.Movers.AirPrescribedFlowRate_Volume fan annotation(
@@ -38,11 +39,11 @@ model OneRoom_ExtData_noAHU
     Placement(visible = true, transformation(origin = {128, -42}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.RealExpression patm(y = 101325) annotation(
     Placement(visible = true, transformation(origin = {-138, -4}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  EEB.CaseStudies.ABC.AirSource_pTphi_prescribed airSrc annotation(
+  EEB.Components.BaseComponents.Air.Sources.AirSource_pTphi_prescribed airSrc_amb annotation(
     Placement(visible = true, transformation(origin = {-102, -32}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Continuous.LowpassButterworth LPF_RHext(f = 1 / 3600, initType = Modelica.Blocks.Types.Init.InitialOutput, n = 4, y_start = 50) annotation(
     Placement(visible = true, transformation(origin = {-130, 72}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  EEB.CaseStudies.ABC.AirSource_pTphi_prescribed airSource_pTphi_prescribed1 annotation(
+  EEB.Components.BaseComponents.Air.Sources.AirSource_pTphi_prescribed airSrc_cond annotation(
     Placement(visible = true, transformation(origin = {-102, -64}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 EEB.Components.BaseComponents.Air.Movers.AirPrescribedFlowRate_Volume airPrescribedFlowRate_Volume1 annotation(
     Placement(visible = true, transformation(origin = {-60, -64}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -50,7 +51,7 @@ EEB.Controllers.Blocks.Analogue.AWPI_1dof PI_T(CSmax = 250 / 3600)  annotation(
     Placement(visible = true, transformation(origin = {-152, -60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 Modelica.Blocks.Sources.RealExpression realExpression3(y = 273.15 + 22) annotation(
     Placement(visible = true, transformation(origin = {-202, -54}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-EEB.CaseStudies.ABC.sensor_Tphi sTphi annotation(
+EEB.Interfaces.Air.sensor_Tphi sTphi annotation(
     Placement(visible = true, transformation(origin = {26, -68}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 equation
   connect(sTphi.T, PI_T.PV) annotation(
@@ -59,19 +60,19 @@ equation
     Line(points = {{-4, -32}, {6, -32}, {6, -68}, {16, -68}, {16, -68}}, color = {0, 100, 150}));
   connect(airPrescribedFlowRate_Volume1.air_flange2, Room.air_flange1) annotation(
     Line(points = {{-52, -64}, {-46, -64}, {-46, -64}, {-40, -64}, {-40, -32}, {-20, -32}, {-20, -32}}, color = {0, 100, 150}));
-  connect(airSource_pTphi_prescribed1.air_flange, airPrescribedFlowRate_Volume1.air_flange1) annotation(
+  connect(airSrc_cond.air_flange, airPrescribedFlowRate_Volume1.air_flange1) annotation(
     Line(points = {{-93, -64}, {-69, -64}}, color = {0, 100, 150}));
-  connect(patm.y, airSource_pTphi_prescribed1.iP) annotation(
+  connect(patm.y, airSrc_cond.iP) annotation(
     Line(points = {{-127, -4}, {-125, -4}, {-125, -56}, {-110, -56}}, color = {0, 0, 127}));
   connect(Weather.y[2], LPF_RHext.u) annotation(
     Line(points = {{-177, 98}, {-161, 98}, {-161, 72}, {-143, 72}}, color = {0, 0, 127}, thickness = 0.5));
-  connect(LPF_RHext.y, airSrc.iphi) annotation(
+  connect(LPF_RHext.y, airSrc_amb.iphi) annotation(
     Line(points = {{-119, 72}, {-112, 72}, {-112, 72}, {-105, 72}, {-105, 24}, {-173, 24}, {-173, -40}, {-111, -40}}, color = {0, 0, 127}));
-  connect(airSrc.air_flange, fan.air_flange1) annotation(
+  connect(airSrc_amb.air_flange, fan.air_flange1) annotation(
     Line(points = {{-93, -32}, {-80, -32}}, color = {0, 100, 150}));
-  connect(patm.y, airSrc.iP) annotation(
+  connect(patm.y, airSrc_amb.iP) annotation(
     Line(points = {{-127, -4}, {-126, -4}, {-126, -4}, {-125, -4}, {-125, -4}, {-123, -4}, {-123, -24}, {-116.5, -24}, {-116.5, -24}, {-110, -24}}, color = {0, 0, 127}));
-  connect(Weather.y[1], airSrc.iT) annotation(
+  connect(Weather.y[1], airSrc_amb.iT) annotation(
     Line(points = {{-177, 98}, {-161, 98}, {-161, -32}, {-111, -32}}, color = {0, 0, 127}, thickness = 0.5));
   connect(Text.port, wall2ext.ss2) annotation(
     Line(points = {{80, 80}, {58, 80}}, color = {191, 0, 0}));
@@ -109,11 +110,11 @@ equation
     Line(points = {{-4, -32}, {19, -32}}, color = {0, 100, 150}));
   connect(fan.air_flange2, Room.air_flange1) annotation(
     Line(points = {{-64, -32}, {-20, -32}, {-20, -32}, {-20, -32}, {-20, -32}, {-20, -32}}, color = {0, 100, 150}));
-  connect(sTphi.phi, airSource_pTphi_prescribed1.iphi) annotation(
+  connect(sTphi.phi, airSrc_cond.iphi) annotation(
     Line(points = {{36, -72}, {42, -72}, {42, -84}, {-116, -84}, {-116, -72}, {-110, -72}, {-110, -72}}, color = {0, 0, 127}));
   connect(PI_T.CS, airPrescribedFlowRate_Volume1.iq) annotation(
     Line(points = {{-144, -54}, {-60, -54}, {-60, -60}, {-60, -60}}, color = {0, 0, 127}));
-  connect(sTphi.T, airSource_pTphi_prescribed1.iT) annotation(
+  connect(sTphi.T, airSrc_cond.iT) annotation(
     Line(points = {{36, -64}, {48, -64}, {48, -92}, {-124, -92}, {-124, -62}, {-110, -62}, {-110, -64}}, color = {0, 0, 127}));
   connect(realExpression3.y, PI_T.SP) annotation(
     Line(points = {{-190, -54}, {-160, -54}, {-160, -54}, {-160, -54}}, color = {0, 0, 127}));

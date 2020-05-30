@@ -1,6 +1,7 @@
 within EEB.CaseStudies.ABC;
 
 model OneRoom
+  extends Icons.CaseStudyModel;
   EEB.Components.BaseComponents.Air.Volumes.AirVolume Room(V = 50, Xstart = 0.0025)  annotation(
     Placement(visible = true, transformation(origin = {-70, -70}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   EEB.Components.BaseComponents.Air.Movers.AirPrescribedFlowRate_Volume fan annotation(

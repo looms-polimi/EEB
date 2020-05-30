@@ -5,20 +5,13 @@ model AmbientAirTempWithOpenings "Ambient air temperature with openings"
   Media.Substances.MoistAir air;
   Interfaces.Thermal.HeatPort port annotation(
   Placement(transformation(extent = {{-80, 40}, {-60, 80}}, rotation = 0), iconTransformation(extent = {{-100, 20}, {-60, 80}})));
-  //Interfaces.Air.MoistAirFlange_wawvQd air_flange annotation(Placement(transformation(extent = {{-100, -40}, {-80, -20}}), iconTransformation(extent = {{-100, -40}, {-60, 0}})));
 public
-  EEB.Interfaces.Air.MoistAirFlange_wawvQd_waPart
-                                              dryair
-    annotation (
+  EEB.Interfaces.Air.MoistAirFlange_wawvQd_waPart dryair annotation (
     Placement(transformation(extent={{-102,10},{-82,30}})));
-  EEB.Interfaces.Air.MoistAirFlange_wawvQd_wvPart
-                                              vapour
-    annotation (
+  EEB.Interfaces.Air.MoistAirFlange_wawvQd_wvPart vapour annotation (
     Placement(transformation(extent={{-100,-48},{-80,-28}}),
         iconTransformation(extent={{-100,-64},{-80,-44}})));
-  EEB.Interfaces.Thermal.HeatPort
-                              diffuse
-    annotation (
+  EEB.Interfaces.Thermal.HeatPort diffuse annotation (
     Placement(transformation(extent={{-100,-20},{-80,0}}),
         iconTransformation(extent={{-100,-36},{-80,-16}})));
 equation
@@ -26,11 +19,6 @@ equation
   air.p = ambient_settings.pa_avg;
   air.T = ambient_settings.Tamb;
   air.X = ambient_settings.Xa_avg;
-//   air_flange.dryair.pa = air.p;
-//   air_flange.dryair.ha = air.cp * air.T;
-//   air_flange.vapour.pv = air.pv;
-//   air_flange.vapour.hv = air.hv;
-//   air_flange.diffuse.T = air.T;
   dryair.pa = air.p;
   dryair.ha = air.cp * air.T;
   vapour.pv = air.pv;

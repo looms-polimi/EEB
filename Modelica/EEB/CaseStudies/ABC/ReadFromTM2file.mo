@@ -1,6 +1,7 @@
 within EEB.CaseStudies.ABC;
 
 model ReadFromTM2file
+  extends Icons.CaseStudyModel;
   Modelica.Blocks.Sources.CombiTimeTable table(
     tableOnFile = true,
     fileName = "/home/leva/Dropbox/Buildings_ABC/Modelica/EEB/Resources/testFile.txt",

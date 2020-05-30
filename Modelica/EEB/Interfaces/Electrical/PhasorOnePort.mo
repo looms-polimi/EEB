@@ -1,6 +1,5 @@
 within EEB.Interfaces.Electrical;
 partial model PhasorOnePort "Component with two electrical pins p and n and current i from p to n"
-
   PositivePhasorPin p annotation(
   Placement(transformation(extent = {{80, 40}, {120, 80}}), iconTransformation(extent = {{80, 40}, {120, 80}})));
   EEB.Interfaces.Electrical.NegativePhasorPin n annotation(

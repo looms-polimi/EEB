@@ -1,3 +1,0 @@
-within EEB.CaseStudies.DEIB.TemperatureControl.Thermal_equivalent.RoomsWithLayeredWall;
-package BaseClasses
-end BaseClasses;

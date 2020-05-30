@@ -1,14 +1,15 @@
 within EEB.CaseStudies.ABC;
 
 model OneRoom_ExtData_forTests
-  Real pippo = Room.air.phi * 100;
+  extends Icons.CaseStudyModel;
+  Real phi100 = Room.air.phi * 100;
   EEB.Components.BaseComponents.Air.Volumes.AirVolume Room(V = 50, Xstart = 0.005) annotation(
     Placement(visible = true, transformation(origin = {-2, -84}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   EEB.Components.BaseComponents.Air.Movers.AirPrescribedFlowRate_Volume fan annotation(
     Placement(visible = true, transformation(origin = {-70, -60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   EEB.Components.BaseComponents.Air.Sinks.AirSink_P_fixed airSink annotation(
     Placement(visible = true, transformation(origin = {82, -78}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.RealExpression qa(y = 50 / 3600) annotation(
+  Modelica.Blocks.Sources.RealExpression qa(y = 50 * 2 / 3600) annotation(
     Placement(visible = true, transformation(origin = {-94, -32}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS room2wall(S = 6, gamma = 8) annotation(
     Placement(visible = true, transformation(origin = {-10, -8}, extent = {{-10, 10}, {10, -10}}, rotation = 0)));
@@ -38,7 +39,7 @@ model OneRoom_ExtData_forTests
     Placement(visible = true, transformation(origin = {130, -70}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.RealExpression patm(y = 101325) annotation(
     Placement(visible = true, transformation(origin = {-136, -32}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  EEB.CaseStudies.ABC.AirSource_pTphi_prescribed airSrc annotation(
+  EEB.Components.BaseComponents.Air.Sources.AirSource_pTphi_prescribed airSrc annotation(
     Placement(visible = true, transformation(origin = {-100, -60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Continuous.LowpassButterworth LPF_RHext(f = 1 / 3600, initType = Modelica.Blocks.Types.Init.InitialOutput, n = 4, y_start = 50) annotation(
     Placement(visible = true, transformation(origin = {-130, 24}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -46,7 +47,7 @@ model OneRoom_ExtData_forTests
     Placement(visible = true, transformation(origin = {-38, -60}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.RealExpression sp_T(y = 273.15 + 24) annotation(
     Placement(visible = true, transformation(origin = {-90, -80}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.RealExpression sp_phi(y = 0.6) annotation(
+  Modelica.Blocks.Sources.RealExpression sp_phi(y = 0.75) annotation(
     Placement(visible = true, transformation(origin = {-66, -90}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.BooleanExpression ahuON(y = true) annotation(
     Placement(visible = true, transformation(origin = {-76, -14}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));

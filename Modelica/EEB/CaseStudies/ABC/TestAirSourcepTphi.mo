@@ -1,7 +1,8 @@
 within EEB.CaseStudies.ABC;
 
 model TestAirSourcepTphi
-  AirSource_pTphi_prescribed air annotation(
+  extends Icons.CaseStudyModel;
+  EEB.Components.BaseComponents.Air.Sources.AirSource_pTphi_prescribed air annotation(
     Placement(visible = true, transformation(origin = {-36, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.RealExpression p(y = 101325)  annotation(
     Placement(visible = true, transformation(origin = {-112, 20}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));

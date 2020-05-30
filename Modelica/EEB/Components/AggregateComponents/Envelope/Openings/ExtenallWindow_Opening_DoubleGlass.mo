@@ -55,8 +55,6 @@ equation
   Line(points = {{40, 32}, {20, 32}, {20, 0}, {2.66454e-15, 0}, {2.66454e-15, -8.88178e-16}}, color = {255, 0, 0}, smooth = Smooth.None));
   connect(opening01, mix.cmd01) annotation(
   Line(points = {{-80, 80}, {-28, 80}, {-28, 68}}, color = {0, 0, 127}, smooth = Smooth.None));
-  connect(solarRadiation_OpaqueSurf.Reflected, RadToSkyGround.SkyTemp) annotation(
-  Line(points = {{76, 62}, {90, 62}, {90, 48}, {76, 48}}, color = {255, 0, 0}, smooth = Smooth.None));
   connect(mix.Bdryair, ambientAirTempWithOpenings.dryair) annotation (
   Line(
         points={{-10.4,66},{16,66},{16,-60},{47.52,-60}}, color={0,100,150}));
