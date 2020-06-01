@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EEB.BoundaryConditions</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Package with boundary conditions&quot;">
+<style type="text/css">
+*       { font-size: 100%; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 90%; font-family: Courier, monospace; white-space: pre; } /* For the Modelica code (in exported html). */
+h4      { font-size: 100%; font-weight: bold; color: green; } 
+h3      { font-size: 110%; font-weight: bold; color: green; }
+h2      { font-size: 130%; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { padding: 2px; border: 1px solid #808080; vertical-align: top; }
+th      { padding: 2px; border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+pre, code {font-family: "Courier New", monospace;}
+pre {white-space: pre; overflow-x : hidden;}
+.ModelicaDescription {font-weight: bold;} /* For the description string of the class. */
+.ModelicaBaseClass {} /* For the list of base-classes at the of the description. */
+.ModelicaKeyword { color: blue; font-weight: normal; font-style: normal; } /* Keywords in Modelica. */
+.ModelicaComment { color: #006400;  font-weight: normal; font-style: normal;} /* All three variants of comments in Modelica.  */
+.ModelicaString { color: #006400;  font-weight: normal; font-style: normal;} /* String constants. */
+.ModelicaClass { color: red; font-weight: normal; font-style: normal;} /* Formatting the names of referenced classes (for base-class and components). */
+.ModelicaFunction { color: red; font-weight: normal; font-style: normal;} /* Formatting for called functions. */
+.ModelicaTablePackageContent { } /* The table of contents for each package. */
+.ModelicaTableCrossReference { } /* The optional cross-reference table. */
+.ModelicaTableInputs {} /* The table of inputs for a function. */
+.ModelicaTableOutputs {} /* The table of outputs for a function. */
+.ModelicaTableParameters {} /* The table of parameters for a model/block. */
+.ModelicaTableConnectors {} /* The table of connectors for a model/block. */
+.ModelicaTableContents {} /* The table of contents for a connector. */
+.ModelicaStartAttribute { font-weight: bold; } /* The formatting used for start-attribute in the table of parameters, to separate them from parameter values. */
+.ModelicaParameterTab { background-color: #c0c0c0; font-weight: bold; } /* The tab-heading in the table of parameters */
+.ModelicaParameterGroup { background-color: #e0e0e0; } /* The group-heading in the table of parameters */
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE BoundaryConditions<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.BoundaryConditions"></a><a href="EEB.html#EEB"
+>EEB</a>.BoundaryConditions</h2>
+<p>
+<span class="ModelicaDescription">Package with boundary conditions</span><br>
+</p>
+<h3>Information</h3>
+
+<p>This package contains boundary conditions components such as for ambient conditions.</p>
+
+<h3>Package Content</h3>
+<table summary="Package Content" class="ModelicaTablePackageContent">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="EEB.BoundaryConditions.AmbientConditionsS.png" alt="EEB.BoundaryConditions.AmbientConditions" width="20" height="20" align="top">&nbsp;<a href="EEB_BoundaryConditions.html#EEB.BoundaryConditions.AmbientConditions"
+>AmbientConditions</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE AmbientConditions<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.BoundaryConditions.AmbientConditionsI.png" alt="EEB.BoundaryConditions.AmbientConditions" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.BoundaryConditions.AmbientConditions"></a><a href="EEB_BoundaryConditions.html#EEB.BoundaryConditions"
+>EEB.BoundaryConditions</a>.AmbientConditions</h2>
+<h3>Information</h3>
+<p><span class="ModelicaBaseClass">Extends from <a href="EEB_Icons.html#EEB.Icons.AmbientConditions"
+>EEB.Icons.AmbientConditions</a>.</span></p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="EEB_Types.html#EEB.Types.AmbCondVariabilty"
+>AmbCondVariabilty</a></td><td>acv</td><td>Types.AmbCondVariabilty.ACV_...</td><td>Variability of ambient conditions</td></tr>
+<tr><td>Integer</td><td>doy_start</td><td>1</td><td>Day-of-year (1-365) of simulation start</td></tr>
+<tr><td>Integer</td><td>hod_start</td><td>0</td><td>hour-of-day (0-23) of simulation start</td></tr>
+<tr><td>Integer</td><td>moh_start</td><td>0</td><td>minute-of-hour (0-59) of simulation start</td></tr>
+<tr class="ModelicaParameterTab"><td colspan="4">Ambient air and wind</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a></td><td>pa_avg</td><td>101325</td><td>Pressure (fixed) [Pa]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a></td><td>Xa_avg</td><td>0.001</td><td>Absolute humidity (fixed) [1]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Ta_avg</td><td>273.15 - 5</td><td>Average temperature [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.TemperatureDifference"
+>TemperatureDifference</a></td><td>Ta_Dex</td><td>4</td><td>Daily T excursion around day average [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.TemperatureDifference"
+>TemperatureDifference</a></td><td>Ta_Yex</td><td>4</td><td>Yearly excursion of day T average around Ta_avg [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tref_DD</td><td>273.15 + 20</td><td>Ref T for degree day computation [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Velocity"
+>Velocity</a></td><td>wv</td><td>0</td><td>Wind velocity (fixed) [m/s]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Angle"
+>Angle</a></td><td>wdir</td><td>0</td><td>Wind direction (0?=N, 90?=E) [rad]</td></tr>
+<tr class="ModelicaParameterTab"><td colspan="4">Sun, sky, ground</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatFlux"
+>HeatFlux</a></td><td>Phimax</td><td>1000</td><td>Max radiative flux [W/m2]</td></tr>
+<tr><td>Real</td><td>azi0</td><td>90</td><td>Constant or yearly avg azimuth (0?=N, 90?=E)</td></tr>
+<tr><td>Real</td><td>azi_Yex</td><td>20</td><td>Yearly excursion of azimuth</td></tr>
+<tr><td>Real</td><td>zen0</td><td>30</td><td>Constant or avg daily max zenith (heigth on horizon)</td></tr>
+<tr><td>Real</td><td>zen_Yex</td><td>10</td><td>Yearly excursion of daily max zenith</td></tr>
+<tr><td>Integer</td><td>esrh</td><td>5</td><td>earliest sunrise hour (0-23) for varying zen/azi</td></tr>
+<tr><td>Integer</td><td>esrm</td><td>10</td><td>earliest sunrise min (0-59) for varying zen/azi</td></tr>
+<tr><td>Integer</td><td>lsrh</td><td>8</td><td>latest sunrise hour (0-23) for varying zen/azi</td></tr>
+<tr><td>Integer</td><td>lsrm</td><td>30</td><td>latest sunrise min (0-59) for varying zen/azi</td></tr>
+<tr><td>Integer</td><td>essh</td><td>17</td><td>earliest sunset hour (0-23) for varying zen/azi</td></tr>
+<tr><td>Integer</td><td>essm</td><td>30</td><td>earliest sunset min (0-59) for varying zen/azi</td></tr>
+<tr><td>Integer</td><td>lssh</td><td>22</td><td>latest sunset hour (0-23) for varying zen/azi</td></tr>
+<tr><td>Integer</td><td>lssm</td><td>15</td><td>latest sunset min (0-59) for varying zen/azi</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tsky</td><td>273.15 + 10</td><td>Sky temperature (fixed) [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tgnd</td><td>273.15 + 12</td><td>Ground temperature (fixed) [K]</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> AmbientConditions
+  <span class="ModelicaKeyword">extends </span><a href="EEB_Icons.html#EEB.Icons.AmbientConditions"
+>EEB.Icons.AmbientConditions</a>;
+  <span class="ModelicaComment">// Constants</span>
+  <span class="ModelicaKeyword">constant </span>Integer SPM = 60 <span class="ModelicaComment">&quot;seconds per minute&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Integer MPH = 60 <span class="ModelicaComment">&quot;minutes per hour&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Integer SPH = SPM * MPH <span class="ModelicaComment">&quot;seconds per minute&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Integer HPD = 24 <span class="ModelicaComment">&quot;hours per day&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Integer DPY = 365 <span class="ModelicaComment">&quot;days per year&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Integer SPD = SPH * HPD <span class="ModelicaComment">&quot;seconds per day&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Integer SPY = SPD * DPY <span class="ModelicaComment">&quot;seconds per year&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Integer JUN21 = 172 <span class="ModelicaComment">&quot;June 21 is day 172 of year&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Integer DEC21 = 355 <span class="ModelicaComment">&quot;December 21 is day 355 of year&quot;</span>;
+  <span class="ModelicaComment">// PARAMETERS --------------------------------------------------------------</span>
+  <span class="ModelicaComment">// *** General</span>
+  <span class="ModelicaKeyword">parameter </span><a href="EEB_Types.html#EEB.Types.AmbCondVariabilty"
+>Types.AmbCondVariabilty</a> acv = Types.AmbCondVariabilty.ACV_constant <span class="ModelicaComment">&quot;Variability of ambient conditions&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer doy_start(min = 1, max = DPY) = 1 <span class="ModelicaComment">&quot;Day-of-year (1-365) of simulation start&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer hod_start(min = 0, max = HPD - 1) = 0 <span class="ModelicaComment">&quot;hour-of-day (0-23) of simulation start&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer moh_start(min = 0, max = MPH - 1) = 0 <span class="ModelicaComment">&quot;minute-of-hour (0-59) of simulation start&quot;</span>;
+  <span class="ModelicaComment">// *** Ambient air and wind properties</span>
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a> pa_avg = 101325 <span class="ModelicaComment">&quot;Pressure (fixed)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a> Xa_avg = 0.001 <span class="ModelicaComment">&quot;Absolute humidity (fixed)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> Ta_avg = 273.15 - 5 <span class="ModelicaComment">&quot;Average temperature&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.TemperatureDifference"
+>TemperatureDifference</a> Ta_Dex = 4 <span class="ModelicaComment">&quot;Daily T excursion around day average&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.TemperatureDifference"
+>TemperatureDifference</a> Ta_Yex = 4 <span class="ModelicaComment">&quot;Yearly excursion of day T average around Ta_avg&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> Tref_DD = 273.15 + 20 <span class="ModelicaComment">&quot;Ref T for degree day computation&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Velocity"
+>Velocity</a> wv = 0 <span class="ModelicaComment">&quot;Wind velocity (fixed)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Angle"
+>Angle</a> wdir(min = 0, max = 360) = 0 <span class="ModelicaComment">&quot;Wind direction (0?=N, 90?=E)&quot;</span>;
+  <span class="ModelicaComment">// *** Sun, sky and ground properties</span>
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatFlux"
+>HeatFlux</a> Phimax = 1000 <span class="ModelicaComment">&quot;Max radiative flux&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real azi0(min = 0, max = 360) = 90 <span class="ModelicaComment">&quot;Constant or yearly avg azimuth (0?=N, 90?=E)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real azi_Yex = 20 <span class="ModelicaComment">&quot;Yearly excursion of azimuth&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real zen0(min = 0, max = 180) = 30 <span class="ModelicaComment">&quot;Constant or avg daily max zenith (heigth on horizon)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real zen_Yex(min = 0, max = 180) = 10 <span class="ModelicaComment">&quot;Yearly excursion of daily max zenith&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer esrh(min = 0, max = 23) = 5 <span class="ModelicaComment">&quot;earliest sunrise hour (0-23) for varying zen/azi&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer esrm(min = 0, max = 59) = 10 <span class="ModelicaComment">&quot;earliest sunrise min (0-59) for varying zen/azi&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer lsrh(min = 0, max = 23) = 8 <span class="ModelicaComment">&quot;latest sunrise hour (0-23) for varying zen/azi&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer lsrm(min = 0, max = 59) = 30 <span class="ModelicaComment">&quot;latest sunrise min (0-59) for varying zen/azi&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer essh(min = 0, max = 23) = 17 <span class="ModelicaComment">&quot;earliest sunset hour (0-23) for varying zen/azi&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer essm(min = 0, max = 59) = 30 <span class="ModelicaComment">&quot;earliest sunset min (0-59) for varying zen/azi&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer lssh(min = 0, max = 23) = 22 <span class="ModelicaComment">&quot;latest sunset hour (0-23) for varying zen/azi&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Integer lssm(min = 0, max = 59) = 15 <span class="ModelicaComment">&quot;latest sunset min (0-59) for varying zen/azi&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> Tsky = 273.15 + 10 <span class="ModelicaComment">&quot;Sky temperature (fixed)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> Tgnd = 273.15 + 12 <span class="ModelicaComment">&quot;Ground temperature (fixed)&quot;</span>;
+  <span class="ModelicaComment">// Time-related quantities</span>
+  Real hours <span class="ModelicaComment">&quot;hours from sim start&quot;</span>;
+  Real days <span class="ModelicaComment">&quot;days from sim start&quot;</span>;
+  Real hod <span class="ModelicaComment">&quot;hour of day (0-24, real-valued, reset every day)&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a> sod <span class="ModelicaComment">&quot;second of day (0-86400, real-valued, reset every day)&quot;</span>;
+  Real doy <span class="ModelicaComment">&quot;day of year (0-365, real-valued, reset every year)&quot;</span>;
+  Real soy <span class="ModelicaComment">&quot;second of year (0-31536000, real-valued, reset every year)&quot;</span>;
+  Real yusw <span class="ModelicaComment">&quot;yearly unit sine wave, max on JUN21 (thus approx min on DEC21)&quot;</span>;
+  <span class="ModelicaComment">// Ambient air properties</span>
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a> pamb <span class="ModelicaComment">&quot;Ambient air p&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> Tamb <span class="ModelicaComment">&quot;Ambient air T&quot;</span>;
+  <span class="ModelicaComment">// Sun-related quantities</span>
+  Real azimuth(min = 0, max = 360) <span class="ModelicaComment">&quot;Current &quot;</span>;
+  Real zenith(min = 0, max = 180) <span class="ModelicaComment">&quot;Current &quot;</span>;
+  Real solarRad <span class="ModelicaComment">&quot;Current &quot;</span>;
+  Real DD <span class="ModelicaComment">&quot;Degree day&quot;</span>;
+<span class="ModelicaKeyword">protected </span>
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a> soy_start = (doy_start - 1) * SPD + hod_start * SPH + moh_start * SPM;
+  <span class="ModelicaKeyword">parameter </span>Real trAvg = (esrh * MPH + esrm + lsrh * MPH + lsrm) / MPH / 2 <span class="ModelicaComment">&quot;mean sunrise time in hours&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real tsAvg = (essh * MPH + essm + lssh * MPH + lssm) / MPH / 2 <span class="ModelicaComment">&quot;mean sunset time in hours&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Dtr = (lsrh * MPH + lsrm - esrh * MPH - esrm) / MPH / 2 <span class="ModelicaComment">&quot;sunrise excursion in hours&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Dts = (lssh * MPH + lssm - essh * MPH - essm) / MPH / 2 <span class="ModelicaComment">&quot;sunset excursion in hours&quot;</span>;
+  Real zenithMax, tr, ts, az, bz, cz, ar, br, cr;
+<span class="ModelicaKeyword">equation </span>
+<span class="ModelicaComment">// Degree day</span>
+  <span class="ModelicaFunction">der</span>(DD) = <span class="ModelicaKeyword">if </span>Tref_DD &gt; Tamb<span class="ModelicaKeyword"> then </span>(Tref_DD - Tamb) / SPD<span class="ModelicaKeyword"> else </span>0;
+<span class="ModelicaComment">// Time-related quantities</span>
+  hours = time / SPH;
+  days = hours / HPD;
+  soy = time + soy_start - SPY *<span class="ModelicaFunction"> floor</span>((time + soy_start) / SPY);
+  sod = soy - SPD *<span class="ModelicaFunction"> floor</span>(soy / SPD);
+  hod = sod / SPH;
+  doy = (soy - SPY *<span class="ModelicaFunction"> floor</span>(soy / SPY)) / SPD;
+  yusw =<span class="ModelicaFunction"> sin</span>((soy - JUN21 * SPD) / SPY * 2 * pi + pi / 2);
+<span class="ModelicaComment">// sunrise and sunset time (in hours)</span>
+  tr = trAvg - Dtr * yusw;
+<span class="ModelicaComment">//sin(pi*(1/(3600*24*182)*time));</span>
+  ts = tsAvg + Dts * yusw;
+<span class="ModelicaComment">//sin(pi*(1/(3600*24*182)*time));</span>
+<span class="ModelicaComment">// Ambient air properties</span>
+  pamb = pa_avg;
+  zenithMax = zen0 + zen_Yex * yusw;
+<span class="ModelicaComment">// parabola coeffs for zenith angle</span>
+  az = -4 * zenithMax / (ts - tr) ^ 2;
+  bz = 4 * zenithMax * (ts + tr) / (ts - tr) ^ 2;
+  cz = -4 * zenithMax * ts * tr / (ts - tr) ^ 2;
+<span class="ModelicaComment">// parabola coeffs for solar radiation</span>
+  ar = -4 * Phimax / (ts - tr) ^ 2;
+  br = 4 * Phimax * (ts + tr) / (ts - tr) ^ 2;
+  cr = -4 * Phimax * ts * tr / (ts - tr) ^ 2;
+  <span class="ModelicaKeyword">if </span>acv == Types.AmbCondVariabilty.ACV_constant<span class="ModelicaKeyword"> then</span>
+    Tamb = Ta_avg;
+    zenith = zen0;
+    azimuth = azi0;
+    solarRad = Phimax;
+  <span class="ModelicaKeyword">else</span>
+    Tamb = Ta_avg + Ta_Yex * yusw + Ta_Dex *<span class="ModelicaFunction"> sin</span>(pi * (1 / (24 * 3600)) * time - 2 * 3.14 / 3);
+    zenith =<span class="ModelicaFunction"> smooth</span>(0,<span class="ModelicaFunction"> max</span>(0, az * hod ^ 2 + bz * hod + cz));
+    azimuth = azi0 + azi_Yex * yusw;
+    solarRad =<span class="ModelicaFunction"> smooth</span>(0,<span class="ModelicaFunction"> max</span>(0, ar * hod ^ 2 + br * hod + cr));
+  <span class="ModelicaKeyword">end if</span>;
+<span class="ModelicaKeyword">end </span>AmbientConditions;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Mon Jun  1 16:09:23 2020.
+</address>
+</body>
+</html>

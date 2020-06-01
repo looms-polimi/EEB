@@ -1,0 +1,1034 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EEB.Components.AggregateComponents.Heating</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+*       { font-size: 100%; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 90%; font-family: Courier, monospace; white-space: pre; } /* For the Modelica code (in exported html). */
+h4      { font-size: 100%; font-weight: bold; color: green; } 
+h3      { font-size: 110%; font-weight: bold; color: green; }
+h2      { font-size: 130%; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { padding: 2px; border: 1px solid #808080; vertical-align: top; }
+th      { padding: 2px; border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+pre, code {font-family: "Courier New", monospace;}
+pre {white-space: pre; overflow-x : hidden;}
+.ModelicaDescription {font-weight: bold;} /* For the description string of the class. */
+.ModelicaBaseClass {} /* For the list of base-classes at the of the description. */
+.ModelicaKeyword { color: blue; font-weight: normal; font-style: normal; } /* Keywords in Modelica. */
+.ModelicaComment { color: #006400;  font-weight: normal; font-style: normal;} /* All three variants of comments in Modelica.  */
+.ModelicaString { color: #006400;  font-weight: normal; font-style: normal;} /* String constants. */
+.ModelicaClass { color: red; font-weight: normal; font-style: normal;} /* Formatting the names of referenced classes (for base-class and components). */
+.ModelicaFunction { color: red; font-weight: normal; font-style: normal;} /* Formatting for called functions. */
+.ModelicaTablePackageContent { } /* The table of contents for each package. */
+.ModelicaTableCrossReference { } /* The optional cross-reference table. */
+.ModelicaTableInputs {} /* The table of inputs for a function. */
+.ModelicaTableOutputs {} /* The table of outputs for a function. */
+.ModelicaTableParameters {} /* The table of parameters for a model/block. */
+.ModelicaTableConnectors {} /* The table of connectors for a model/block. */
+.ModelicaTableContents {} /* The table of contents for a connector. */
+.ModelicaStartAttribute { font-weight: bold; } /* The formatting used for start-attribute in the table of parameters, to separate them from parameter values. */
+.ModelicaParameterTab { background-color: #c0c0c0; font-weight: bold; } /* The tab-heading in the table of parameters */
+.ModelicaParameterGroup { background-color: #e0e0e0; } /* The group-heading in the table of parameters */
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Heating<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Components.AggregateComponents.Heating"></a><a href="EEB_Components_AggregateComponents.html#EEB.Components.AggregateComponents"
+>EEB.Components.AggregateComponents</a>.Heating</h2>
+<p>
+</p>
+<h3>Package Content</h3>
+<table summary="Package Content" class="ModelicaTablePackageContent">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateC34369e7102c906a4eaterS.png" alt="EEB.Components.AggregateComponents.Heating.RoomHeater" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.RoomHeater"
+>RoomHeater</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateC9f39357df745eaa9ValveS.png" alt="EEB.Components.AggregateComponents.Heating.RoomHeaterWithValve" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.RoomHeaterWithValve"
+>RoomHeaterWithValve</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateCabf3e8450bdc722dhWallS.png" alt="EEB.Components.AggregateComponents.Heating.WaterCoilWithWall" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.WaterCoilWithWall"
+>WaterCoilWithWall</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateCd224f8b5b4eb9819nCoilS.png" alt="EEB.Components.AggregateComponents.Heating.FanCoil" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.FanCoil"
+>FanCoil</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateCac3edcf512a081f0eaterS.png" alt="EEB.Components.AggregateComponents.Heating.IdealControlledFluidHeater" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.IdealControlledFluidHeater"
+>IdealControlledFluidHeater</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateCff5b4a43509a8728oilerS.png" alt="EEB.Components.AggregateComponents.Heating.ElectricBoiler" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.ElectricBoiler"
+>ElectricBoiler</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateC49624254566ffcf4oilerS.png" alt="EEB.Components.AggregateComponents.Heating.FuelBoiler" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.FuelBoiler"
+>FuelBoiler</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateC8164e5e8eb2d2853eCoilS.png" alt="EEB.Components.AggregateComponents.Heating.AirCaptureCoil" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.AirCaptureCoil"
+>AirCaptureCoil</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.AggregateCd9aa7756dcc4c170tanceS.png" alt="EEB.Components.AggregateComponents.Heating.AirCaptureCoilWithMaterialConductance" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.AirCaptureCoilWithMaterialConductance"
+>AirCaptureCoilWithMaterialConductance</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE RoomHeater<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateC34369e7102c906a4eaterI.png" alt="EEB.Components.AggregateComponents.Heating.RoomHeater" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.RoomHeater"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.RoomHeater</h2>
+<p>
+<br><img src="EEB.Components.AggregateC34369e7102c906a4eaterD.png" alt="EEB.Components.AggregateComponents.Heating.RoomHeater">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>nLumps</td><td>2</td><td>number of lumps</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Ltube</td><td>30</td><td>tube length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dtube</td><td>0.05</td><td>tube inner diameter [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dz</td><td>0</td><td>height diff (out-in) [m]</td></tr>
+<tr><td>Real</td><td>Cftube</td><td>1e-6</td><td>tube friction coefficient</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a></td><td>Mmetal</td><td>10</td><td>metal mass [kg]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a></td><td>cpMetal</td><td>500</td><td>metal specific heat [J/(kg.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tstart</td><td>273.15 + 25</td><td>initial metal and fluid temp [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>STube</td><td>pi*Dtube*Ltube</td><td>total surf, both sides [m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaTubeMetal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>heatPort</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> RoomHeater
+  <span class="ModelicaKeyword">parameter </span>Integer nLumps = 2 <span class="ModelicaComment">&quot;number of lumps&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Ltube = 30 <span class="ModelicaComment">&quot;tube length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dtube = 0.05 <span class="ModelicaComment">&quot;tube inner diameter&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dz = 0 <span class="ModelicaComment">&quot;height diff (out-in)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Cftube = 1e-6 <span class="ModelicaComment">&quot;tube friction coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>SI.Mass</a> Mmetal = 10 <span class="ModelicaComment">&quot;metal mass&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SI.SpecificHeatCapacity</a> cpMetal = 500 <span class="ModelicaComment">&quot;metal specific heat&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tstart = 273.15 + 25 <span class="ModelicaComment">&quot;initial metal and fluid temp&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>SI.Area</a> STube = pi * Dtube * Ltube <span class="ModelicaComment">&quot;total surf, both sides&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaTubeMetal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> heatPort;
+  <a href="EEB_Components_BaseComponents_Thermal_Capacities.html#EEB.Components.BaseComponents.Thermal.Capacities.MassT"
+>BaseComponents.Thermal.Capacities.MassT</a> massT(Tstart = Tstart, M = Mmetal, cp = cpMetal);
+  <a href="EEB_Components_BaseComponents_Water_Pipes.html#EEB.Components.BaseComponents.Water.Pipes.WaterPipeExchanging_Nvols"
+>BaseComponents.Water.Pipes.WaterPipeExchanging_Nvols</a> pipeExchangingN(n = nLumps, Ltube = Ltube, Dtube = Dtube, Dz = Dz, Cftube = Cftube, Tstart = Tstart);
+  <a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV"
+>BaseComponents.Thermal.HeatTransfer.Convection_SV</a> convVec2Sca1(n = nLumps, S = STube, gamma = gammaTubeMetal);
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange2;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">connect</span>(pipeExchangingN.heatPort, convVec2Sca1.vs);
+  <span class="ModelicaFunction">connect</span>(convVec2Sca1.ss, heatPort);
+  <span class="ModelicaFunction">connect</span>(massT.surf, heatPort);
+  <span class="ModelicaFunction">connect</span>(water_flange1, pipeExchangingN.water_flange1);
+  <span class="ModelicaFunction">connect</span>(pipeExchangingN.water_flange2, water_flange2);
+<span class="ModelicaKeyword">end </span>RoomHeater;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE RoomHeaterWithValve<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateC9f39357df745eaa9ValveI.png" alt="EEB.Components.AggregateComponents.Heating.RoomHeaterWithValve" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.RoomHeaterWithValve"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.RoomHeaterWithValve</h2>
+<p>
+<br><img src="EEB.Components.AggregateC9f39357df745eaa9ValveD.png" alt="EEB.Components.AggregateComponents.Heating.RoomHeaterWithValve">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>nLumps</td><td>2</td><td>number of lumps</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Ltube</td><td>30</td><td>tube length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dtube</td><td>0.05</td><td>tube inner diameter [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dz</td><td>0</td><td>height diff (out-in) [m]</td></tr>
+<tr><td>Real</td><td>Cftube</td><td>1e-6</td><td>tube friction coefficient</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a></td><td>Mmetal</td><td>10</td><td>[kg]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a></td><td>cpMetal</td><td>500</td><td>[J/(kg.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tstart</td><td>273.15 + 25</td><td>initial metal and fluid temp [K]</td></tr>
+<tr><td>Real</td><td>cvmaxValve</td><td>0.01</td><td>kg/s/sqrt(Pa)</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a></td><td>TpValve</td><td>1</td><td>positioner TC [s]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaTubeMetal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>STube</td><td>pi*Dtube*Ltube</td><td>total surf, both sides [m2]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>heatPort</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>cmd</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> RoomHeaterWithValve
+  <span class="ModelicaKeyword">parameter </span>Integer nLumps = 2 <span class="ModelicaComment">&quot;number of lumps&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Ltube = 30 <span class="ModelicaComment">&quot;tube length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dtube = 0.05 <span class="ModelicaComment">&quot;tube inner diameter&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dz = 0 <span class="ModelicaComment">&quot;height diff (out-in)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Cftube = 1e-6 <span class="ModelicaComment">&quot;tube friction coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>SI.Mass</a> Mmetal = 10;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SI.SpecificHeatCapacity</a> cpMetal = 500;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tstart = 273.15 + 25 <span class="ModelicaComment">&quot;initial metal and fluid temp&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real cvmaxValve = 0.01 <span class="ModelicaComment">&quot;kg/s/sqrt(Pa)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>SI.Time</a> TpValve = 1 <span class="ModelicaComment">&quot;positioner TC&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaTubeMetal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>SI.Area</a> STube = pi * Dtube * Ltube <span class="ModelicaComment">&quot;total surf, both sides&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> heatPort;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> cmd;
+  <a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.RoomHeater"
+>RoomHeater</a> roomHeater(nLumps = nLumps, Ltube = Ltube, Dtube = Dtube, Dz = Dz, Cftube = Cftube, Mmetal = Mmetal, cpMetal = cpMetal, Tstart = Tstart, STube = STube, gammaTubeMetal = gammaTubeMetal);
+  <a href="EEB_Components_BaseComponents_Water_Valves.html#EEB.Components.BaseComponents.Water.Valves.WaterValve3Ways_LinChar"
+>BaseComponents.Water.Valves.WaterValve3Ways_LinChar</a> valve3WaysLinChar;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange2;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">connect</span>(roomHeater.heatPort, heatPort);
+  <span class="ModelicaFunction">connect</span>(cmd, valve3WaysLinChar.cmd);
+  <span class="ModelicaFunction">connect</span>(valve3WaysLinChar.water_flange1, water_flange1);
+  <span class="ModelicaFunction">connect</span>(valve3WaysLinChar.water_flange3, roomHeater.water_flange1);
+  <span class="ModelicaFunction">connect</span>(valve3WaysLinChar.water_flange2, water_flange2);
+  <span class="ModelicaFunction">connect</span>(roomHeater.water_flange2, water_flange2);
+<span class="ModelicaKeyword">end </span>RoomHeaterWithValve;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WaterCoilWithWall<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateCabf3e8450bdc722dhWallI.png" alt="EEB.Components.AggregateComponents.Heating.WaterCoilWithWall" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.WaterCoilWithWall"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.WaterCoilWithWall</h2>
+<p>
+<br><img src="EEB.Components.AggregateCabf3e8450bdc722dhWallD.png" alt="EEB.Components.AggregateComponents.Heating.WaterCoilWithWall">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>nLumps</td><td>2</td><td>number of lumps</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Ltube</td><td>30</td><td>tube length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dtube</td><td>0.05</td><td>tube inner diameter [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dz</td><td>0</td><td>height diff (out-in) [m]</td></tr>
+<tr><td>Real</td><td>Cftube</td><td>1e-6</td><td>tube friction coefficient</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaTubeMetal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a></td><td>Mmetal</td><td>10</td><td>metal mass [kg]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a></td><td>cpMetal</td><td>500</td><td>metal specific heat [J/(kg.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tstart</td><td>273.15 + 25</td><td>initial metal and fluid temp [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaMetalExternal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>STube</td><td>pi*Dtube*Ltube</td><td>total surf tube [m2]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>heatPort</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> WaterCoilWithWall
+  <span class="ModelicaKeyword">parameter </span>Integer nLumps = 2 <span class="ModelicaComment">&quot;number of lumps&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Ltube = 30 <span class="ModelicaComment">&quot;tube length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dtube = 0.05 <span class="ModelicaComment">&quot;tube inner diameter&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dz = 0 <span class="ModelicaComment">&quot;height diff (out-in)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Cftube = 1e-6 <span class="ModelicaComment">&quot;tube friction coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaTubeMetal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>SI.Mass</a> Mmetal = 10 <span class="ModelicaComment">&quot;metal mass&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SI.SpecificHeatCapacity</a> cpMetal = 500 <span class="ModelicaComment">&quot;metal specific heat&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tstart = 273.15 + 25 <span class="ModelicaComment">&quot;initial metal and fluid temp&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaMetalExternal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>SI.Area</a> STube = pi * Dtube * Ltube <span class="ModelicaComment">&quot;total surf tube&quot;</span>;
+  <a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV"
+>BaseComponents.Thermal.HeatTransfer.Convection_SV</a> convVec2Sca(n = nLumps, gamma = gammaTubeMetal, S = STube);
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> heatPort;
+  <a href="EEB_Components_BaseComponents_Thermal_Capacities.html#EEB.Components.BaseComponents.Thermal.Capacities.MassT"
+>BaseComponents.Thermal.Capacities.MassT</a> massT(Tstart = Tstart, M = Mmetal, cp = cpMetal);
+  <a href="EEB_Components_BaseComponents_Water_Pipes.html#EEB.Components.BaseComponents.Water.Pipes.WaterPipeExchanging_Nvols"
+>BaseComponents.Water.Pipes.WaterPipeExchanging_Nvols</a> pipeExchangingN(n = nLumps, Ltube = Ltube, Dtube = Dtube, Dz = Dz, Cftube = Cftube, Tstart = Tstart);
+  <a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS"
+>BaseComponents.Thermal.HeatTransfer.Convection_SS</a> convSca2Sca(S = STube, gamma = gammaMetalExternal);
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange2;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">connect</span>(convVec2Sca.ss, convSca2Sca.ss1);
+  <span class="ModelicaFunction">connect</span>(convSca2Sca.ss2, heatPort);
+  <span class="ModelicaFunction">connect</span>(massT.surf, convSca2Sca.ss1);
+  <span class="ModelicaFunction">connect</span>(pipeExchangingN.heatPort, convVec2Sca.vs);
+  <span class="ModelicaFunction">connect</span>(pipeExchangingN.water_flange1, water_flange1);
+  <span class="ModelicaFunction">connect</span>(pipeExchangingN.water_flange2, water_flange2);
+<span class="ModelicaKeyword">end </span>WaterCoilWithWall;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE FanCoil<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateCd224f8b5b4eb9819nCoilI.png" alt="EEB.Components.AggregateComponents.Heating.FanCoil" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.FanCoil"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.FanCoil</h2>
+<p>
+<br><img src="EEB.Components.AggregateCd224f8b5b4eb9819nCoilD.png" alt="EEB.Components.AggregateComponents.Heating.FanCoil">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>ncoil</td><td>1</td><td>number of lumps</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Lcoil</td><td>30</td><td>tube length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dcoil</td><td>0.05</td><td>tube inner diameter [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dz</td><td>0</td><td>height diff (out-in) [m]</td></tr>
+<tr><td>Real</td><td>Cftube</td><td>1e-6</td><td>tube friction coefficient</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaTubeMetal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a></td><td>Mmetal</td><td>10</td><td>metal mass [kg]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a></td><td>cpMetal</td><td>500</td><td>metal specific heat [J/(kg.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tstart</td><td>273.15 + 25</td><td>initial metal, fluid temp and moist air [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaMetalExternal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>STube</td><td>pi*waterCoilWithWall.Dtube*w...</td><td>total surf tube [m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>Volume</a></td><td>V</td><td>0.001</td><td>Moist air volume [m3]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a></td><td>Pstart</td><td>101325</td><td>Initial moist air pressure [Pa]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a></td><td>Xstart</td><td>0.001</td><td>Initial absolute umidity [kg_H20/kg_DA] [1]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductance"
+>ThermalConductance</a></td><td>Gaw</td><td>100</td><td>air-wall thermal conductance [W/K]</td></tr>
+<tr><td>Real</td><td>qamax</td><td>0.02</td><td>max air volumetric flowrate (m3/s)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>icmd01</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>MoistAirFlange_waxa</a></td><td>air_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>MoistAirFlange_waxa</a></td><td>air_flange2</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> FanCoil
+  <span class="ModelicaKeyword">parameter </span>Integer ncoil = 1 <span class="ModelicaComment">&quot;number of lumps&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Lcoil = 30 <span class="ModelicaComment">&quot;tube length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dcoil = 0.05 <span class="ModelicaComment">&quot;tube inner diameter&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dz = 0 <span class="ModelicaComment">&quot;height diff (out-in)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Cftube = 1e-6 <span class="ModelicaComment">&quot;tube friction coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaTubeMetal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>SI.Mass</a> Mmetal = 10 <span class="ModelicaComment">&quot;metal mass&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SI.SpecificHeatCapacity</a> cpMetal = 500 <span class="ModelicaComment">&quot;metal specific heat&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tstart = 273.15 + 25 <span class="ModelicaComment">&quot;initial metal, fluid temp and moist air&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaMetalExternal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>SI.Area</a> STube = pi * waterCoilWithWall.Dtube * waterCoilWithWall.Ltube <span class="ModelicaComment">&quot;total surf tube&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>SI.Volume</a> V = 0.001 <span class="ModelicaComment">&quot;Moist air volume&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>SI.Pressure</a> Pstart = 101325 <span class="ModelicaComment">&quot;Initial moist air pressure&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>SI.MassFraction</a> Xstart = 0.001 <span class="ModelicaComment">&quot;Initial absolute umidity [kg_H20/kg_DA]&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductance"
+>SI.ThermalConductance</a> Gaw = 100 <span class="ModelicaComment">&quot;air-wall thermal conductance&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real qamax = 0.02 <span class="ModelicaComment">&quot;max air volumetric flowrate (m3/s)&quot;</span>;
+  <a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.WaterCoilWithWall"
+>Heating.WaterCoilWithWall</a> waterCoilWithWall(nLumps = ncoil, Ltube = Lcoil, Dtube = Dcoil, Dz = Dz, Cftube = Cftube, gammaTubeMetal = gammaTubeMetal, Mmetal = Mmetal, cpMetal = cpMetal, Tstart = Tstart, STube = STube, gammaMetalExternal = gammaMetalExternal);
+  <a href="EEB_Components_BaseComponents_Air_Volumes.html#EEB.Components.BaseComponents.Air.Volumes.AirVolumeWithWall_Condensing"
+>BaseComponents.Air.Volumes.AirVolumeWithWall_Condensing</a> airVolumeWithWall_Condensing(V = V, Pstart = Pstart, Tstart = Tstart, Xstart = Xstart, Cw = cpMetal * Mmetal, Gaw = Gaw);
+  <a href="EEB_Components_BaseComponents_Air_Movers.html#EEB.Components.BaseComponents.Air.Movers.AirPrescribedFlowRate_Volume"
+>BaseComponents.Air.Movers.AirPrescribedFlowRate_Volume</a> airPrescribedFlowRate_Volume;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> icmd01;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Gain"
+>Modelica.Blocks.Math.Gain</a> qa(k = qamax);
+  <a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>Interfaces.Air.MoistAirFlange_waxa</a> air_flange1;
+  <a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>Interfaces.Air.MoistAirFlange_waxa</a> air_flange2;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange2;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.heatPort, airVolumeWithWall_Condensing.heatPort);
+  <span class="ModelicaFunction">connect</span>(airVolumeWithWall_Condensing.air_flange1, airPrescribedFlowRate_Volume.air_flange2);
+  <span class="ModelicaFunction">connect</span>(airPrescribedFlowRate_Volume.air_flange1, air_flange1);
+  <span class="ModelicaFunction">connect</span>(air_flange2, airVolumeWithWall_Condensing.air_flange2);
+  <span class="ModelicaFunction">connect</span>(icmd01, qa.u);
+  <span class="ModelicaFunction">connect</span>(qa.y, airPrescribedFlowRate_Volume.iq);
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.water_flange1, water_flange1);
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.water_flange2, water_flange2);
+<span class="ModelicaKeyword">end </span>FanCoil;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE IdealControlledFluidHeater<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateCac3edcf512a081f0eaterI.png" alt="EEB.Components.AggregateComponents.Heating.IdealControlledFluidHeater" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.IdealControlledFluidHeater"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.IdealControlledFluidHeater</h2>
+<p>
+<br><img src="EEB.Components.AggregateCac3edcf512a081f0eaterD.png" alt="EEB.Components.AggregateComponents.Heating.IdealControlledFluidHeater">
+</p>
+<h3>Information</h3>
+<p><span class="ModelicaBaseClass">Extends from <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.PartialTwoPort_water"
+>Interfaces.Water.PartialTwoPort_water</a> (Partial component with two ports).</span></p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a></td><td>Tcl</td><td>5</td><td>CL temp ctrl TC [s]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a></td><td>Thc</td><td>20</td><td>intrinsic cooling TC [s]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tstart</td><td>273.15 + 25</td><td>initial fluid temp [K]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>BooleanInput</a></td><td>ON</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>To</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>Pc</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>Ec</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>oTi</td><td>inlet T meas</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>oTo</td><td>outlet T meas</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> IdealControlledFluidHeater
+  <span class="ModelicaKeyword">extends </span><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.PartialTwoPort_water"
+>Interfaces.Water.PartialTwoPort_water</a>;
+  <a href="EEB_Media_Substances.html#EEB.Media.Substances.SubcooledWater"
+>Media.Substances.SubcooledWater</a> waterIN, water;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>SI.Time</a> Tcl = 5 <span class="ModelicaComment">&quot;CL temp ctrl TC&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>SI.Time</a> Thc = 20 <span class="ModelicaComment">&quot;intrinsic cooling TC&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tstart = 273.15 + 25 <span class="ModelicaComment">&quot;initial fluid temp&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tfi <span class="ModelicaComment">&quot;inlet fluid temp&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tfo(start = Tstart) <span class="ModelicaComment">&quot;outlet fluid temp&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>Modelica.Blocks.Interfaces.BooleanInput</a> ON;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> To;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> Pc;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> Ec;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> oTi <span class="ModelicaComment">&quot;inlet T meas&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> oTo <span class="ModelicaComment">&quot;outlet T meas&quot;</span>;
+<span class="ModelicaKeyword">equation </span>
+<span class="ModelicaComment">// no pressure drop (&quot;water&quot; is water out)</span>
+  p1 = p2;
+  waterIN.p = p1;
+  water.p = p1;
+<span class="ModelicaComment">// no mass storage</span>
+  w1 + w2 = 0;
+<span class="ModelicaComment">// enthalpy boundary conditions</span>
+  hout1 = water.h;
+  hout2 = water.h;
+  waterIN.h =<span class="ModelicaFunction"> actualStream</span>(water_flange1.h);
+<span class="ModelicaComment">// definition of the input and output temperatures</span>
+  waterIN.T = Tfi;
+  water.T = Tfo;
+  <span class="ModelicaKeyword">if </span>ON<span class="ModelicaKeyword"> then</span>
+    Tfo + Tcl *<span class="ModelicaFunction"> der</span>(Tfo) = To;
+  <span class="ModelicaKeyword">else</span>
+    Tfo + Thc *<span class="ModelicaFunction"> der</span>(Tfo) = Tfi;
+  <span class="ModelicaKeyword">end if</span>;
+<span class="ModelicaComment">// Power consumption</span>
+  Pc =<span class="ModelicaFunction"> noEvent</span>(<span class="ModelicaFunction">max</span>(w1 * (<span class="ModelicaFunction">actualStream</span>(water_flange2.h) -<span class="ModelicaFunction"> actualStream</span>(water_flange1.h)), 0.0));
+  Pc =<span class="ModelicaFunction"> der</span>(Ec);
+<span class="ModelicaComment">// Temp meas</span>
+  oTi = Tfi;
+  oTo = Tfo;
+<span class="ModelicaKeyword">end </span>IdealControlledFluidHeater;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE ElectricBoiler<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateCff5b4a43509a8728oilerI.png" alt="EEB.Components.AggregateComponents.Heating.ElectricBoiler" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.ElectricBoiler"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.ElectricBoiler</h2>
+<p>
+<br><img src="EEB.Components.AggregateCff5b4a43509a8728oilerD.png" alt="EEB.Components.AggregateComponents.Heating.ElectricBoiler">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Power"
+>Power</a></td><td>Pnom</td><td>500</td><td>Nominal power consumption [W]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Voltage"
+>Voltage</a></td><td>Vnom</td><td>220</td><td>Nominal voltage [V]</td></tr>
+<tr><td>Real</td><td>Td</td><td>273.15 + 50</td><td>Desired temperature</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>Volume</a></td><td>Vboiler</td><td>0.1</td><td>max contained water volume [m3]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>Volume</a></td><td>Vstart</td><td>0.001</td><td>initial water volume [m3]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>e</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>BooleanInput</a></td><td>ON</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.PositivePin"
+>PositivePin</a></td><td>p</td><td>&nbsp;</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.NegativePin"
+>NegativePin</a></td><td>n</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> ElectricBoiler
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Power"
+>SI.Power</a> Pnom = 500 <span class="ModelicaComment">&quot;Nominal power consumption&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Voltage"
+>SI.Voltage</a> Vnom = 220 <span class="ModelicaComment">&quot;Nominal voltage&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Td = 273.15 + 50 <span class="ModelicaComment">&quot;Desired temperature&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>SI.Volume</a> Vboiler = 0.1 <span class="ModelicaComment">&quot;max contained water volume&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>SI.Volume</a> Vstart = 0.001 <span class="ModelicaComment">&quot;initial water volume&quot;</span>;
+  Real Ec <span class="ModelicaComment">&quot;Energy consuption in kWh&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> e;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(k = Td);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Feedback"
+>Modelica.Blocks.Math.Feedback</a> f1;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Logical.html#Modelica.Blocks.Logical.Hysteresis"
+>Modelica.Blocks.Logical.Hysteresis</a> hysteresis(uLow = -1, uHigh = 1);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const1(k = Vboiler * 1000);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Feedback"
+>Modelica.Blocks.Math.Feedback</a> f2;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Logical.html#Modelica.Blocks.Logical.Hysteresis"
+>Modelica.Blocks.Logical.Hysteresis</a> win(uLow = 0, uHigh = 1);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Basic.html#Modelica.Electrical.Analog.Basic.HeatingResistor"
+>Modelica.Electrical.Analog.Basic.HeatingResistor</a> heatingResistor(R_ref = Vnom ^ 2 / Pnom, useHeatPort = true);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Ideal.html#Modelica.Electrical.Analog.Ideal.IdealClosingSwitch"
+>Modelica.Electrical.Analog.Ideal.IdealClosingSwitch</a> idealClosingSwitch;
+  <a href="EEB_Components_BaseComponents_Water_Tanks.html#EEB.Components.BaseComponents.Water.Tanks.Tank_exchangingWall"
+>Components.BaseComponents.Water.Tanks.Tank_exchangingWall</a> tank(V = Vboiler, Mm = 20, Vstart = Vstart, pin = 101325);
+  <a href="EEB_Components_BaseComponents_Water_Pumps.html#EEB.Components.BaseComponents.Water.Pumps.WaterPump_Volumetric"
+>Components.BaseComponents.Water.Pumps.WaterPump_Volumetric</a> volumetricPump(qmax(displayUnit = &quot;l/min&quot;) = 0.0003);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const2(k = 1);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Logical.html#Modelica.Blocks.Logical.Switch"
+>Modelica.Blocks.Logical.Switch</a> switch2;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const3(k = 0);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>Modelica.Blocks.Interfaces.BooleanInput</a> ON;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Logical.html#Modelica.Blocks.Logical.And"
+>Modelica.Blocks.Logical.And</a> and1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange2;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.PositivePin"
+>Modelica.Electrical.Analog.Interfaces.PositivePin</a> p;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.NegativePin"
+>Modelica.Electrical.Analog.Interfaces.NegativePin</a> n;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">der</span>(Ec) = (p.v - n.v) * p.i / (3600 * 1000);
+  <span class="ModelicaFunction">connect</span>(const.y, f1.u1);
+  <span class="ModelicaFunction">connect</span>(f1.y, hysteresis.u);
+  <span class="ModelicaFunction">connect</span>(f2.y, win.u);
+  <span class="ModelicaFunction">connect</span>(f2.u1, const1.y);
+  <span class="ModelicaFunction">connect</span>(win.y, switch2.u2);
+  <span class="ModelicaFunction">connect</span>(switch2.y, volumetricPump.cmd);
+  <span class="ModelicaFunction">connect</span>(tank.oM, f2.u2);
+  <span class="ModelicaFunction">connect</span>(const2.y, switch2.u1);
+  <span class="ModelicaFunction">connect</span>(const3.y, switch2.u3);
+  <span class="ModelicaFunction">connect</span>(tank.wall, e);
+  <span class="ModelicaFunction">connect</span>(heatingResistor.heatPort, tank.fluid);
+  <span class="ModelicaFunction">connect</span>(tank.oT, f1.u2);
+  <span class="ModelicaFunction">connect</span>(heatingResistor.n, idealClosingSwitch.p);
+  <span class="ModelicaFunction">connect</span>(hysteresis.y, and1.u1);
+  <span class="ModelicaFunction">connect</span>(ON, and1.u2);
+  <span class="ModelicaFunction">connect</span>(and1.y, idealClosingSwitch.control);
+  <span class="ModelicaFunction">connect</span>(volumetricPump.water_flange1, water_flange1);
+  <span class="ModelicaFunction">connect</span>(tank.water_flange1, volumetricPump.water_flange2);
+  <span class="ModelicaFunction">connect</span>(tank.water_flange2, water_flange2);
+  <span class="ModelicaFunction">connect</span>(heatingResistor.p, p);
+  <span class="ModelicaFunction">connect</span>(idealClosingSwitch.n, n);
+<span class="ModelicaKeyword">end </span>ElectricBoiler;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE FuelBoiler<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateC49624254566ffcf4oilerI.png" alt="EEB.Components.AggregateComponents.Heating.FuelBoiler" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.FuelBoiler"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.FuelBoiler</h2>
+<p>
+<br><img src="EEB.Components.AggregateC49624254566ffcf4oilerD.png" alt="EEB.Components.AggregateComponents.Heating.FuelBoiler">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Real</td><td>Td</td><td>273.15 + 50</td><td>Desired temperature</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>Volume</a></td><td>Vboiler</td><td>0.1</td><td>max contained water volume [m3]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>Volume</a></td><td>Vstart</td><td>0.001</td><td>initial water volume [m3]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Power"
+>Power</a></td><td>Qmax</td><td>20000</td><td>Max thermal power of heater [W]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>e</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>BooleanInput</a></td><td>ON</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange3</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> FuelBoiler
+  <span class="ModelicaKeyword">parameter </span>Real Td = 273.15 + 50 <span class="ModelicaComment">&quot;Desired temperature&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>SI.Volume</a> Vboiler = 0.1 <span class="ModelicaComment">&quot;max contained water volume&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>SI.Volume</a> Vstart = 0.001 <span class="ModelicaComment">&quot;initial water volume&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Power"
+>SI.Power</a> Qmax = 20000 <span class="ModelicaComment">&quot;Max thermal power of heater&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> e;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const(k = Td);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Feedback"
+>Modelica.Blocks.Math.Feedback</a> f1;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const1(k = Vboiler * 1000);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Feedback"
+>Modelica.Blocks.Math.Feedback</a> f2;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Logical.html#Modelica.Blocks.Logical.Hysteresis"
+>Modelica.Blocks.Logical.Hysteresis</a> win(uLow = 0, uHigh = 1);
+  <a href="EEB_Components_BaseComponents_Water_Tanks.html#EEB.Components.BaseComponents.Water.Tanks.Tank_exchangingWall"
+>Components.BaseComponents.Water.Tanks.Tank_exchangingWall</a> tank(V = Vboiler, Mm = 20, Vstart = Vstart, pin = 101325);
+  <a href="EEB_Components_BaseComponents_Water_Pumps.html#EEB.Components.BaseComponents.Water.Pumps.WaterPump_Volumetric"
+>Components.BaseComponents.Water.Pumps.WaterPump_Volumetric</a> volumetricPump(qmax(displayUnit = &quot;l/min&quot;) = 0.0003);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const2(k = 1);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Logical.html#Modelica.Blocks.Logical.Switch"
+>Modelica.Blocks.Logical.Switch</a> switch2;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const3(k = 0);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Gain"
+>Modelica.Blocks.Math.Gain</a> gain(k = 10000);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Nonlinear.html#Modelica.Blocks.Nonlinear.Limiter"
+>Modelica.Blocks.Nonlinear.Limiter</a> gain1(uMax = Qmax, uMin = 0);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Thermal_HeatTransfer_Sources.html#Modelica.Thermal.HeatTransfer.Sources.PrescribedHeatFlow"
+>Modelica.Thermal.HeatTransfer.Sources.PrescribedHeatFlow</a> prescribedHeatFlow;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Logical.html#Modelica.Blocks.Logical.Switch"
+>Modelica.Blocks.Logical.Switch</a> switch1;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> const4(k = 0);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.BooleanInput"
+>Modelica.Blocks.Interfaces.BooleanInput</a> ON;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange2;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange3;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">connect</span>(const.y, f1.u1);
+  <span class="ModelicaFunction">connect</span>(f2.y, win.u);
+  <span class="ModelicaFunction">connect</span>(f2.u1, const1.y);
+  <span class="ModelicaFunction">connect</span>(win.y, switch2.u2);
+  <span class="ModelicaFunction">connect</span>(const2.y, switch2.u1);
+  <span class="ModelicaFunction">connect</span>(const3.y, switch2.u3);
+  <span class="ModelicaFunction">connect</span>(gain.y, gain1.u);
+  <span class="ModelicaFunction">connect</span>(f1.y, gain.u);
+  <span class="ModelicaFunction">connect</span>(e, e);
+  <span class="ModelicaFunction">connect</span>(tank.oM, f2.u2);
+  <span class="ModelicaFunction">connect</span>(tank.oT, f1.u2);
+  <span class="ModelicaFunction">connect</span>(switch2.y, volumetricPump.cmd);
+  <span class="ModelicaFunction">connect</span>(switch1.y, prescribedHeatFlow.Q_flow);
+  <span class="ModelicaFunction">connect</span>(gain1.y, switch1.u1);
+  <span class="ModelicaFunction">connect</span>(prescribedHeatFlow.port, tank.fluid);
+  <span class="ModelicaFunction">connect</span>(const4.y, switch1.u3);
+  <span class="ModelicaFunction">connect</span>(ON, switch1.u2);
+  <span class="ModelicaFunction">connect</span>(e, tank.wall);
+  <span class="ModelicaFunction">connect</span>(volumetricPump.water_flange1, water_flange1);
+  <span class="ModelicaFunction">connect</span>(tank.water_flange2, water_flange2);
+  <span class="ModelicaFunction">connect</span>(water_flange3, volumetricPump.water_flange2);
+  <span class="ModelicaFunction">connect</span>(tank.water_flange1, volumetricPump.water_flange2);
+<span class="ModelicaKeyword">end </span>FuelBoiler;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE AirCaptureCoil<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateC8164e5e8eb2d2853eCoilI.png" alt="EEB.Components.AggregateComponents.Heating.AirCaptureCoil" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.AirCaptureCoil"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.AirCaptureCoil</h2>
+<p>
+<br><img src="EEB.Components.AggregateC8164e5e8eb2d2853eCoilD.png" alt="EEB.Components.AggregateComponents.Heating.AirCaptureCoil">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>ncoil</td><td>1</td><td>number of lumps</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Lcoil</td><td>30</td><td>tube length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dcoil</td><td>0.05</td><td>tube inner diameter [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dz</td><td>0</td><td>height diff (out-in) [m]</td></tr>
+<tr><td>Real</td><td>Cftube</td><td>1e-6</td><td>tube friction coefficient</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaTubeMetal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a></td><td>Mmetal</td><td>10</td><td>metal mass [kg]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a></td><td>cpMetal</td><td>500</td><td>metal specific heat [J/(kg.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tstart</td><td>273.15 + 25</td><td>initial metal, fluid temp and moist air [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaMetalExternal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>STube</td><td>pi*waterCoilWithWall.Dtube*w...</td><td>total surf tube [m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>Volume</a></td><td>V</td><td>0.001</td><td>Moist air volume [m3]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a></td><td>Pstart</td><td>101325</td><td>Initial moist air pressure [Pa]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a></td><td>Xstart</td><td>0.001</td><td>Initial absolute umidity [kg_H20/kg_DA] [1]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductance"
+>ThermalConductance</a></td><td>Gaw</td><td>100</td><td>air-wall thermal conductance [W/K]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>MoistAirFlange_waxa</a></td><td>air_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>MoistAirFlange_waxa</a></td><td>air_flange2</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> AirCaptureCoil
+  <span class="ModelicaKeyword">parameter </span>Integer ncoil = 1 <span class="ModelicaComment">&quot;number of lumps&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Lcoil = 30 <span class="ModelicaComment">&quot;tube length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dcoil = 0.05 <span class="ModelicaComment">&quot;tube inner diameter&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dz = 0 <span class="ModelicaComment">&quot;height diff (out-in)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Cftube = 1e-6 <span class="ModelicaComment">&quot;tube friction coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaTubeMetal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>SI.Mass</a> Mmetal = 10 <span class="ModelicaComment">&quot;metal mass&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SI.SpecificHeatCapacity</a> cpMetal = 500 <span class="ModelicaComment">&quot;metal specific heat&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tstart = 273.15 + 25 <span class="ModelicaComment">&quot;initial metal, fluid temp and moist air&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaMetalExternal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>SI.Area</a> STube = pi * waterCoilWithWall.Dtube * waterCoilWithWall.Ltube <span class="ModelicaComment">&quot;total surf tube&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>SI.Volume</a> V = 0.001 <span class="ModelicaComment">&quot;Moist air volume&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>SI.Pressure</a> Pstart = 101325 <span class="ModelicaComment">&quot;Initial moist air pressure&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>SI.MassFraction</a> Xstart = 0.001 <span class="ModelicaComment">&quot;Initial absolute umidity [kg_H20/kg_DA]&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductance"
+>SI.ThermalConductance</a> Gaw = 100 <span class="ModelicaComment">&quot;air-wall thermal conductance&quot;</span>;
+  <a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.WaterCoilWithWall"
+>Heating.WaterCoilWithWall</a> waterCoilWithWall(nLumps = ncoil, Ltube = Lcoil, Dtube = Dcoil, Dz = Dz, Cftube = Cftube, gammaTubeMetal = gammaTubeMetal, Mmetal = Mmetal, cpMetal = cpMetal, Tstart = Tstart, STube = STube, gammaMetalExternal = gammaMetalExternal);
+  <a href="EEB_Components_BaseComponents_Air_Volumes.html#EEB.Components.BaseComponents.Air.Volumes.AirVolumeWithWall_Condensing"
+>BaseComponents.Air.Volumes.AirVolumeWithWall_Condensing</a> airVolumeWithWall_Condensing(V = V, Pstart = Pstart, Tstart = Tstart, Xstart = Xstart, Cw = cpMetal * Mmetal, Gaw = Gaw);
+  <a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>Interfaces.Air.MoistAirFlange_waxa</a> air_flange1;
+  <a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>Interfaces.Air.MoistAirFlange_waxa</a> air_flange2;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange2;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">connect</span>(airVolumeWithWall_Condensing.air_flange2, air_flange2);
+  <span class="ModelicaFunction">connect</span>(airVolumeWithWall_Condensing.air_flange1, air_flange1);
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.heatPort, airVolumeWithWall_Condensing.heatPort);
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.water_flange1, water_flange1);
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.water_flange2, water_flange2);
+<span class="ModelicaKeyword">end </span>AirCaptureCoil;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE AirCaptureCoilWithMaterialConductance<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.AggregateCd9aa7756dcc4c170tanceI.png" alt="EEB.Components.AggregateComponents.Heating.AirCaptureCoilWithMaterialConductance" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.AggregateComponents.Heating.AirCaptureCoilWithMaterialConductance"></a><a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating"
+>EEB.Components.AggregateComponents.Heating</a>.AirCaptureCoilWithMaterialConductance</h2>
+<p>
+<br><img src="EEB.Components.AggregateCd9aa7756dcc4c170tanceD.png" alt="EEB.Components.AggregateComponents.Heating.AirCaptureCoilWithMaterialConductance">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>ncoil</td><td>1</td><td>number of lumps</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Lcoil</td><td>30</td><td>tube length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dcoil</td><td>0.05</td><td>tube inner diameter [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>Dz</td><td>0</td><td>height diff (out-in) [m]</td></tr>
+<tr><td>Real</td><td>Cftube</td><td>1e-6</td><td>tube friction coefficient</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaTubeMetal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a></td><td>Mmetal</td><td>10</td><td>metal mass [kg]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a></td><td>cpMetal</td><td>500</td><td>metal specific heat [J/(kg.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tstart</td><td>273.15 + 25</td><td>initial metal, fluid temp and moist air [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gammaMetalExternal</td><td>5</td><td>heat transfer coefficient [W/(m2.K)]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>STube</td><td>pi*waterCoilWithWall.Dtube*w...</td><td>total surf tube [m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>Volume</a></td><td>V</td><td>0.001</td><td>Moist air volume [m3]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a></td><td>Pstart</td><td>101325</td><td>Initial moist air pressure [Pa]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a></td><td>Xstart</td><td>0.001</td><td>Initial absolute umidity [kg_H20/kg_DA] [1]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductance"
+>ThermalConductance</a></td><td>G</td><td>10</td><td>Constant thermal conductance of material [W/K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductance"
+>ThermalConductance</a></td><td>Gaw</td><td>100</td><td>air-wall thermal conductance [W/K]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>heatPort</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>MoistAirFlange_waxa</a></td><td>air_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>MoistAirFlange_waxa</a></td><td>air_flange2</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> AirCaptureCoilWithMaterialConductance
+  <span class="ModelicaKeyword">parameter </span>Integer ncoil = 1 <span class="ModelicaComment">&quot;number of lumps&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Lcoil = 30 <span class="ModelicaComment">&quot;tube length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dcoil = 0.05 <span class="ModelicaComment">&quot;tube inner diameter&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>SI.Length</a> Dz = 0 <span class="ModelicaComment">&quot;height diff (out-in)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Cftube = 1e-6 <span class="ModelicaComment">&quot;tube friction coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaTubeMetal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>SI.Mass</a> Mmetal = 10 <span class="ModelicaComment">&quot;metal mass&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SI.SpecificHeatCapacity</a> cpMetal = 500 <span class="ModelicaComment">&quot;metal specific heat&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> Tstart = 273.15 + 25 <span class="ModelicaComment">&quot;initial metal, fluid temp and moist air&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>SI.CoefficientOfHeatTransfer</a> gammaMetalExternal = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>SI.Area</a> STube = pi * waterCoilWithWall.Dtube * waterCoilWithWall.Ltube <span class="ModelicaComment">&quot;total surf tube&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Volume"
+>SI.Volume</a> V = 0.001 <span class="ModelicaComment">&quot;Moist air volume&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>SI.Pressure</a> Pstart = 101325 <span class="ModelicaComment">&quot;Initial moist air pressure&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>SI.MassFraction</a> Xstart = 0.001 <span class="ModelicaComment">&quot;Initial absolute umidity [kg_H20/kg_DA]&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductance"
+>SI.ThermalConductance</a> G = 10 <span class="ModelicaComment">&quot;Constant thermal conductance of material&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductance"
+>SI.ThermalConductance</a> Gaw = 100 <span class="ModelicaComment">&quot;air-wall thermal conductance&quot;</span>;
+  <a href="EEB_Components_AggregateComponents_Heating.html#EEB.Components.AggregateComponents.Heating.WaterCoilWithWall"
+>Heating.WaterCoilWithWall</a> waterCoilWithWall(nLumps = ncoil, Ltube = Lcoil, Dtube = Dcoil, Dz = Dz, Cftube = Cftube, gammaTubeMetal = gammaTubeMetal, Mmetal = Mmetal, cpMetal = cpMetal, Tstart = Tstart, STube = STube, gammaMetalExternal = gammaMetalExternal);
+  <a href="EEB_Components_BaseComponents_Air_Volumes.html#EEB.Components.BaseComponents.Air.Volumes.AirVolumeWithWall_Condensing"
+>BaseComponents.Air.Volumes.AirVolumeWithWall_Condensing</a> airVolumeWithWall_Condensing(V = V, Pstart = Pstart, Tstart = Tstart, Xstart = Xstart, Cw = cpMetal * Mmetal, Gaw = Gaw);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Thermal_HeatTransfer_Components.html#Modelica.Thermal.HeatTransfer.Components.ThermalConductor"
+>Modelica.Thermal.HeatTransfer.Components.ThermalConductor</a> thermalConductor(G = G);
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> heatPort;
+  <a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>Interfaces.Air.MoistAirFlange_waxa</a> air_flange1;
+  <a href="EEB_Interfaces_Air.html#EEB.Interfaces.Air.MoistAirFlange_waxa"
+>Interfaces.Air.MoistAirFlange_waxa</a> air_flange2;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange1;
+  <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>Interfaces.Water.WaterFlange</a> water_flange2;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">connect</span>(airVolumeWithWall_Condensing.air_flange2, air_flange2);
+  <span class="ModelicaFunction">connect</span>(airVolumeWithWall_Condensing.air_flange1, air_flange1);
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.heatPort, thermalConductor.port_a);
+  <span class="ModelicaFunction">connect</span>(thermalConductor.port_b, airVolumeWithWall_Condensing.heatPort);
+  <span class="ModelicaFunction">connect</span>(heatPort, airVolumeWithWall_Condensing.heatPort);
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.water_flange1, water_flange1);
+  <span class="ModelicaFunction">connect</span>(waterCoilWithWall.water_flange2, water_flange2);
+<span class="ModelicaKeyword">end </span>AirCaptureCoilWithMaterialConductance;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Mon Jun  1 16:09:37 2020.
+</address>
+</body>
+</html>

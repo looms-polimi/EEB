@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EEB.Media.Substances</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="&quot;Package with substances&quot;">
+<style type="text/css">
+*       { font-size: 100%; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 90%; font-family: Courier, monospace; white-space: pre; } /* For the Modelica code (in exported html). */
+h4      { font-size: 100%; font-weight: bold; color: green; } 
+h3      { font-size: 110%; font-weight: bold; color: green; }
+h2      { font-size: 130%; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { padding: 2px; border: 1px solid #808080; vertical-align: top; }
+th      { padding: 2px; border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+pre, code {font-family: "Courier New", monospace;}
+pre {white-space: pre; overflow-x : hidden;}
+.ModelicaDescription {font-weight: bold;} /* For the description string of the class. */
+.ModelicaBaseClass {} /* For the list of base-classes at the of the description. */
+.ModelicaKeyword { color: blue; font-weight: normal; font-style: normal; } /* Keywords in Modelica. */
+.ModelicaComment { color: #006400;  font-weight: normal; font-style: normal;} /* All three variants of comments in Modelica.  */
+.ModelicaString { color: #006400;  font-weight: normal; font-style: normal;} /* String constants. */
+.ModelicaClass { color: red; font-weight: normal; font-style: normal;} /* Formatting the names of referenced classes (for base-class and components). */
+.ModelicaFunction { color: red; font-weight: normal; font-style: normal;} /* Formatting for called functions. */
+.ModelicaTablePackageContent { } /* The table of contents for each package. */
+.ModelicaTableCrossReference { } /* The optional cross-reference table. */
+.ModelicaTableInputs {} /* The table of inputs for a function. */
+.ModelicaTableOutputs {} /* The table of outputs for a function. */
+.ModelicaTableParameters {} /* The table of parameters for a model/block. */
+.ModelicaTableConnectors {} /* The table of connectors for a model/block. */
+.ModelicaTableContents {} /* The table of contents for a connector. */
+.ModelicaStartAttribute { font-weight: bold; } /* The formatting used for start-attribute in the table of parameters, to separate them from parameter values. */
+.ModelicaParameterTab { background-color: #c0c0c0; font-weight: bold; } /* The tab-heading in the table of parameters */
+.ModelicaParameterGroup { background-color: #e0e0e0; } /* The group-heading in the table of parameters */
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Substances<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Media.Substances"></a><a href="EEB_Media.html#EEB.Media"
+>EEB.Media</a>.Substances</h2>
+<p>
+<span class="ModelicaDescription">Package with substances</span><br>
+</p>
+<h3>Information</h3>
+
+<p>This package provides the model of moist air and subcooled water.</p>
+
+<p><span class="ModelicaBaseClass">Extends from <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Icons_MaterialPropertiesPackage.html#Modelica.Icons.MaterialPropertiesPackage"
+>Modelica.Icons.MaterialPropertiesPackage</a> (Icon for package containing property classes).</span></p>
+<h3>Package Content</h3>
+<table summary="Package Content" class="ModelicaTablePackageContent">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="EEB.Media.Substances.MoistAirS.png" alt="EEB.Media.Substances.MoistAir" width="20" height="20" align="top">&nbsp;<a href="EEB_Media_Substances.html#EEB.Media.Substances.MoistAir"
+>MoistAir</a>
+</td>
+<td>Moist air</td>
+</tr>
+<tr>
+<td><img src="EEB.Media.Substances.MoistAirS.png" alt="EEB.Media.Substances.SubcooledWater" width="20" height="20" align="top">&nbsp;<a href="EEB_Media_Substances.html#EEB.Media.Substances.SubcooledWater"
+>SubcooledWater</a>
+</td>
+<td>Subcooled water</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE MoistAir<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Media.Substances.MoistAirI.png" alt="EEB.Media.Substances.MoistAir" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Media.Substances.MoistAir"></a><a href="EEB_Media_Substances.html#EEB.Media.Substances"
+>EEB.Media.Substances</a>.MoistAir</h2>
+<p>
+<span class="ModelicaDescription">Moist air</span>
+</p>
+<h3>Information</h3>
+
+<p>This is the moist air model that is based on Mollier Diagram.</p>
+<p>In the HVAC systems, the air is generally considered as a binary mixture of dry air and water vapor, i.e. moist air. State properties of moist air are calculated by using the Dalton&rsquo;s law on perfect gas mixtures.</p>
+<p>In order to find out the thermodynamic state of the moist air, we use the Gibbs&rsquo; phase rule</p>
+<p align="center">F = C &minus; P + 2 </p>
+<p>where C is the number of components (in this case, vapor and dry air), P the number of phases in thermodynamic equilibrium (in this case the only phase is the gas one), and F the number of degrees of freedom.</p>
+<p>Thus, dealing with moist air, C is two (vapor and dry air), P is one (gas phase only) and therefore F is equal to three. So we need to know the total pressure, the specific enthalpy h (using convetion that h=0 if T=0&deg;C and no water vapour is present), and the mass fraction X, which is the vapor and dry air mass ratio.</p>
+
+<p><span class="ModelicaBaseClass">Extends from <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Icons.html#Modelica.Icons.MaterialProperty"
+>Modelica.Icons.MaterialProperty</a> (Icon for property classes).</span></p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Boolean</td><td>is4cap</td><td>false</td><td>set true to suggest pTX as states when used in a capacity</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> MoistAir <span class="ModelicaComment">&quot;Moist air&quot;</span>
+  <span class="ModelicaKeyword">extends </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Icons.html#Modelica.Icons.MaterialProperty"
+>Modelica.Icons.MaterialProperty</a>;
+  <span class="ModelicaKeyword">import </span>MAC = <a href="EEB_Media_Constants.html#EEB.Media.Constants"
+>EEB.Media.Constants</a>;
+  <span class="ModelicaKeyword">parameter </span>Boolean is4cap=false <span class="ModelicaComment">&quot;set true to suggest pTX as states when used in a capacity&quot;</span>;
+  <span class="ModelicaKeyword">connector</span> Input_p = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a> <span class="ModelicaComment">&quot;pressure&quot;</span>;
+  <span class="ModelicaKeyword">connector</span> Input_T = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> <span class="ModelicaComment">&quot;temperature&quot;</span>;
+  <span class="ModelicaKeyword">connector</span> Input_X = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a> <span class="ModelicaComment">&quot;absolute humidity [kg vap/kg da]&quot;</span>;
+  <a href="EEB_Media_Substances.html#EEB.Media.Substances.MoistAir.Input_p"
+>Input_p</a> p(
+   stateSelect = <span class="ModelicaKeyword">if </span>is4cap<span class="ModelicaKeyword"> then </span>StateSelect.prefer<span class="ModelicaKeyword"> else </span>StateSelect.default)
+  <span class="ModelicaComment">&quot;pressure&quot;</span>;
+  <a href="EEB_Media_Substances.html#EEB.Media.Substances.MoistAir.Input_T"
+>Input_T</a> T(
+   stateSelect = <span class="ModelicaKeyword">if </span>is4cap<span class="ModelicaKeyword"> then </span>StateSelect.prefer<span class="ModelicaKeyword"> else </span>StateSelect.default)
+  <span class="ModelicaComment">&quot;temperature&quot;</span>;
+  <a href="EEB_Media_Substances.html#EEB.Media.Substances.MoistAir.Input_X"
+>Input_X</a> X(
+   stateSelect = <span class="ModelicaKeyword">if </span>is4cap<span class="ModelicaKeyword"> then </span>StateSelect.prefer<span class="ModelicaKeyword"> else </span>StateSelect.default)
+  <span class="ModelicaComment">&quot;absolute humidity [kg vap/kg da]&quot;</span>;
+  <span class="ModelicaComment">//-----------------------------------------------------------------------------</span>
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a> x <span class="ModelicaComment">&quot;vapour mass fraction [kg vap/kg tot]&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a> pv <span class="ModelicaComment">&quot;vapour partial pressure&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a> pvs <span class="ModelicaComment">&quot;vapour saturation pressure&quot;</span>;
+  Real phi <span class="ModelicaComment">&quot;relative humidity&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> Twb <span class="ModelicaComment">&quot;wet bulb temperature&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a> Xs <span class="ModelicaComment">&quot;absolute humidity [kg vap/kg da] at saturation (phi=1)&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificEnthalpy"
+>SpecificEnthalpy</a> ha <span class="ModelicaComment">&quot;specific enthalpy of dry air [J/kg da]&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificEnthalpy"
+>SpecificEnthalpy</a> hv <span class="ModelicaComment">&quot;specific enthalpy of vapour [J/kg vap]&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificEnthalpy"
+>SpecificEnthalpy</a> h <span class="ModelicaComment">&quot;specific enthalpy of moist air [J/kg da]&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificEnthalpy"
+>SpecificEnthalpy</a> hl <span class="ModelicaComment">&quot;specific enthalpy of liquid water at T [J/kg liq]&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Density"
+>Density</a> d <span class="ModelicaComment">&quot;density of moist air&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a> cp <span class="ModelicaComment">&quot;moist air specific heat capacity [J/kg da K]&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a> R <span class="ModelicaComment">&quot;equivalent gas constant of moist air&quot;</span>;
+<span class="ModelicaKeyword">equation </span>
+  x = X / (1 + X);
+  pv = p * (X / 0.622) / (1 + X / 0.622);
+  pvs = 610.78 *<span class="ModelicaFunction"> exp</span>((T - 273.15) / (T - 273.15 + 238.3) * 17.2694);
+  pv = pvs * phi;
+  pv = 610.78 *<span class="ModelicaFunction"> exp</span>((Twb - 273.15) / (Twb - 273.15 + 238.3) * 17.2694);
+  <span class="ModelicaComment">// for Twb</span>
+  pvs = p * (Xs / 0.622) / (1 + Xs / 0.622);
+  <span class="ModelicaComment">// for Xs</span>
+  ha = MAC.cp_a * (T - 273.15);
+  hv = MAC.h_v_3pt + MAC.cp_v * (T - 273.15);
+  h = ha + X * hv;
+  hl = MAC.cp_l * (T - 273.15);
+  d = (p - pv) / (MAC.Ra * T) + pv / (MAC.Rv * T);
+  cp = MAC.cp_a + X * MAC.cp_v;
+  R = MAC.Ra + MAC.Rv * X;
+<span class="ModelicaKeyword">end </span>MoistAir;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SubcooledWater<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Media.Substances.MoistAirI.png" alt="EEB.Media.Substances.SubcooledWater" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Media.Substances.SubcooledWater"></a><a href="EEB_Media_Substances.html#EEB.Media.Substances"
+>EEB.Media.Substances</a>.SubcooledWater</h2>
+<p>
+<span class="ModelicaDescription">Subcooled water</span>
+</p>
+<h3>Information</h3>
+
+<p>This is the subcooled water model.</p>
+<p>The state equations for the substances in liquid phase are generally very complex. Therefore it is preferred to study the properties of the liquids according to simplifying assumptions. The most important one is to assume an incompressible substance behavior which means that the volume does not change for every transformation. It occurs that the assumption of incompressible substance behavior is lawful, for all substances, at thermodynamic states not too much close to the critical state. Thus, we assume the subcooled water as an incompressible substance far from its critical state. These two assumptions lead to the following conclusions:</p>
+<p>- the specific heat at constant pressure and volume have the same value cp=cv=c;</p>
+<p>- the variation of the specific enthalpy is the same of the specific internal energy.</p>
+<p>In fact, because we deal with incompressible substance behavior, the specific volume of the fluid is about 10&minus;3m3/kg. Therefore, we can neglect the vdp term: </p>
+<p align="center">dh=cdT+vdp &asymp; cdT=du</p>
+<p>- the specific heat, the specific enthalpy and the specific internal energy are functions of the same temperature only:</p>
+<p align="center">c = c (T); </p>
+<p align="center">h = h (T);</p>
+<p align="center"> u = u (T).</p>
+<p>We can finally assume that the specific heat is constant and equal to c = 4.186kJ/kgK, because its variation with the temperature is almost negligible.</p>
+
+<p><span class="ModelicaBaseClass">Extends from <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Icons.html#Modelica.Icons.MaterialProperty"
+>Modelica.Icons.MaterialProperty</a> (Icon for property classes).</span></p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> SubcooledWater <span class="ModelicaComment">&quot;Subcooled water&quot;</span>
+  <span class="ModelicaKeyword">extends </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Icons.html#Modelica.Icons.MaterialProperty"
+>Modelica.Icons.MaterialProperty</a>;
+  <span class="ModelicaKeyword">import </span>MAC = <a href="EEB_Media_Constants.html#EEB.Media.Constants"
+>EEB.Media.Constants</a>;
+  <span class="ModelicaKeyword">connector</span> Input_p = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>SI.Pressure</a> <span class="ModelicaComment">&quot;pressure&quot;</span>;
+  <span class="ModelicaKeyword">connector</span> Input_T = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> <span class="ModelicaComment">&quot;temperature&quot;</span>;
+  <a href="EEB_Media_Substances.html#EEB.Media.Substances.SubcooledWater.Input_p"
+>Input_p</a> p <span class="ModelicaComment">&quot;pressure&quot;</span>;
+  <a href="EEB_Media_Substances.html#EEB.Media.Substances.SubcooledWater.Input_T"
+>Input_T</a> T <span class="ModelicaComment">&quot;temperature&quot;</span>;
+  <span class="ModelicaComment">//-----------------------------------------------------------------------------</span>
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificEnthalpy"
+>SpecificEnthalpy</a> h <span class="ModelicaComment">&quot;specific enthalpy&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Density"
+>Density</a> d <span class="ModelicaComment">&quot;density&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a> cp <span class="ModelicaComment">&quot;specific heat capacity per [J/kg da K]&quot;</span>;
+<span class="ModelicaKeyword">equation </span>
+  h = MAC.cp_l * (T - 273.15);
+  d = MAC.d_l;
+  cp = MAC.cp_l;
+<span class="ModelicaKeyword">end </span>SubcooledWater;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Input_p<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Media.Substances.MoistAir.Input_p"></a><a href="EEB_Media_Substances.html#EEB.Media.Substances.MoistAir"
+>EEB.Media.Substances.MoistAir</a>.Input_p</h2>
+<p>
+<span class="ModelicaDescription">pressure</span>
+</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">connector</span> Input_p = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a> <span class="ModelicaComment">&quot;pressure&quot;</span>;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Input_T<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Media.Substances.MoistAir.Input_T"></a><a href="EEB_Media_Substances.html#EEB.Media.Substances.MoistAir"
+>EEB.Media.Substances.MoistAir</a>.Input_T</h2>
+<p>
+<span class="ModelicaDescription">temperature</span>
+</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">connector</span> Input_T = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> <span class="ModelicaComment">&quot;temperature&quot;</span>;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Input_X<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Media.Substances.MoistAir.Input_X"></a><a href="EEB_Media_Substances.html#EEB.Media.Substances.MoistAir"
+>EEB.Media.Substances.MoistAir</a>.Input_X</h2>
+<p>
+<span class="ModelicaDescription">absolute humidity [kg vap/kg da]</span>
+</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">connector</span> Input_X = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.MassFraction"
+>MassFraction</a> <span class="ModelicaComment">&quot;absolute humidity [kg vap/kg da]&quot;</span>;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Input_p<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Media.Substances.SubcooledWater.Input_p"></a><a href="EEB_Media_Substances.html#EEB.Media.Substances.SubcooledWater"
+>EEB.Media.Substances.SubcooledWater</a>.Input_p</h2>
+<p>
+<span class="ModelicaDescription">pressure</span>
+</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">connector</span> Input_p = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>SI.Pressure</a> <span class="ModelicaComment">&quot;pressure&quot;</span>;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Input_T<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Media.Substances.SubcooledWater.Input_T"></a><a href="EEB_Media_Substances.html#EEB.Media.Substances.SubcooledWater"
+>EEB.Media.Substances.SubcooledWater</a>.Input_T</h2>
+<p>
+<span class="ModelicaDescription">temperature</span>
+</p>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">connector</span> Input_T = <span class="ModelicaKeyword">input </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>SI.Temperature</a> <span class="ModelicaComment">&quot;temperature&quot;</span>;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Mon Jun  1 16:09:24 2020.
+</address>
+</body>
+</html>

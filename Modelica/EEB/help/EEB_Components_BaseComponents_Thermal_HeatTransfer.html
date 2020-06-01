@@ -1,0 +1,670 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EEB.Components.BaseComponents.Thermal.HeatTransfer</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+*       { font-size: 100%; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 90%; font-family: Courier, monospace; white-space: pre; } /* For the Modelica code (in exported html). */
+h4      { font-size: 100%; font-weight: bold; color: green; } 
+h3      { font-size: 110%; font-weight: bold; color: green; }
+h2      { font-size: 130%; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { padding: 2px; border: 1px solid #808080; vertical-align: top; }
+th      { padding: 2px; border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+pre, code {font-family: "Courier New", monospace;}
+pre {white-space: pre; overflow-x : hidden;}
+.ModelicaDescription {font-weight: bold;} /* For the description string of the class. */
+.ModelicaBaseClass {} /* For the list of base-classes at the of the description. */
+.ModelicaKeyword { color: blue; font-weight: normal; font-style: normal; } /* Keywords in Modelica. */
+.ModelicaComment { color: #006400;  font-weight: normal; font-style: normal;} /* All three variants of comments in Modelica.  */
+.ModelicaString { color: #006400;  font-weight: normal; font-style: normal;} /* String constants. */
+.ModelicaClass { color: red; font-weight: normal; font-style: normal;} /* Formatting the names of referenced classes (for base-class and components). */
+.ModelicaFunction { color: red; font-weight: normal; font-style: normal;} /* Formatting for called functions. */
+.ModelicaTablePackageContent { } /* The table of contents for each package. */
+.ModelicaTableCrossReference { } /* The optional cross-reference table. */
+.ModelicaTableInputs {} /* The table of inputs for a function. */
+.ModelicaTableOutputs {} /* The table of outputs for a function. */
+.ModelicaTableParameters {} /* The table of parameters for a model/block. */
+.ModelicaTableConnectors {} /* The table of connectors for a model/block. */
+.ModelicaTableContents {} /* The table of contents for a connector. */
+.ModelicaStartAttribute { font-weight: bold; } /* The formatting used for start-attribute in the table of parameters, to separate them from parameter values. */
+.ModelicaParameterTab { background-color: #c0c0c0; font-weight: bold; } /* The tab-heading in the table of parameters */
+.ModelicaParameterGroup { background-color: #e0e0e0; } /* The group-heading in the table of parameters */
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE HeatTransfer<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Components.BaseComponents.Thermal.HeatTransfer"></a><a href="EEB_Components_BaseComponents_Thermal.html#EEB.Components.BaseComponents.Thermal"
+>EEB.Components.BaseComponents.Thermal</a>.HeatTransfer</h2>
+<p>
+</p>
+<h3>Package Content</h3>
+<table summary="Package Content" class="ModelicaTablePackageContent">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon83985c5e08d9fb6aon_SSS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Conduction_SS" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Conduction_SS"
+>Conduction_SS</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompond79b5b4408dbab6aon_SSS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS"
+>Convection_SS</a>
+</td>
+<td>Scalar to scalar convection, fixed heat transfer coefficient</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon039c8069df4c6da7mmaInS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS_gammaIn" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS_gammaIn"
+>Convection_SS_gammaIn</a>
+</td>
+<td>Scalar to scalar convection, externally provided heat transfer coefficient</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompond79b5b4708dbab6fon_SVS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV"
+>Convection_SV</a>
+</td>
+<td>Scalar to vector convection, fixed heat transfer coefficient</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon4ed0514cdf4c68a7mmaInS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV_gammaIn" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV_gammaIn"
+>Convection_SV_gammaIn</a>
+</td>
+<td>Scalar to vector convection, externally provided heat transfer coefficient</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompond79b5cd008dbabcfon_VVS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV"
+>Convection_VV</a>
+</td>
+<td>Vector to vector convection, fixed heat transfer coefficient</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseComponca543575df4cc8a7mmaInS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV_gammaIn" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV_gammaIn"
+>Convection_VV_gammaIn</a>
+</td>
+<td>Vector to vector convection, externally provided heat transfer coefficient</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon884391fd49e9fe13_BI74S.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BI74" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BI74"
+>Convection_Wall2air_BI74</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon8845f6a349e99db4_BRISS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BRIS" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BRIS"
+>Convection_Wall2air_BRIS</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon1c7faddea786c91elarkeS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2Ext_Clarke" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2Ext_Clarke"
+>Convection_Wall2Ext_Clarke</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseComponc09e450f4a0e9154roughS.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.PrescribedHeatFlowThrough" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer.PrescribedHeatFlowThrough"
+>PrescribedHeatFlowThrough</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Conduction_SS<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon83985c5e08d9fb6aon_SSI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Conduction_SS" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Conduction_SS"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Conduction_SS</h2>
+<p>
+<br><img src="EEB.Components.BaseCompon83985c5e08d9fb6aon_SSD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Conduction_SS">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>A</td><td>1</td><td>total surf, both sides [m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>d</td><td>0.2</td><td>thickness [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductivity"
+>ThermalConductivity</a></td><td>lambda</td><td>5</td><td>heat transfer coefficient [W/(m.K)]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>ss1</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>ss2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Conduction_SS
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a> A = 1 <span class="ModelicaComment">&quot;total surf, both sides&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a> d = 0.2 <span class="ModelicaComment">&quot;thickness&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ThermalConductivity"
+>ThermalConductivity</a> lambda = 5 <span class="ModelicaComment">&quot;heat transfer coefficient&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> ss1;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> ss2;
+<span class="ModelicaKeyword">equation </span>
+  ss1.Q_flow + ss2.Q_flow = 0;
+  ss1.Q_flow = lambda * A * (ss1.T - ss2.T) / d;
+<span class="ModelicaKeyword">end </span>Conduction_SS;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_SS<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompond79b5b4408dbab6aon_SSI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_SS</h2>
+<p>
+<span class="ModelicaDescription">Scalar to scalar convection, fixed heat transfer coefficient</span>
+<br>
+<br><img src="EEB.Components.BaseCompond79b5b4408dbab6aon_SSD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>S</td><td>1</td><td>Area, both sides [m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gamma</td><td>5</td><td>Heat transfer coefficient [W/(m2.K)]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>ss1</td><td>Scalar side 1</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>ss2</td><td>Scalar side 2</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_SS <span class="ModelicaComment">&quot;Scalar to scalar convection, fixed heat transfer coefficient&quot;</span>
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a> S = 1 <span class="ModelicaComment">&quot;Area, both sides&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a> gamma = 5 <span class="ModelicaComment">&quot;Heat transfer coefficient&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> ss1 <span class="ModelicaComment">&quot;Scalar side 1&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> ss2 <span class="ModelicaComment">&quot;Scalar side 2&quot;</span>;
+<span class="ModelicaKeyword">equation </span>
+  ss1.Q_flow + ss2.Q_flow = 0;
+  ss1.Q_flow = gamma * S * (ss1.T - ss2.T);
+<span class="ModelicaKeyword">end </span>Convection_SS;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_SS_gammaIn<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon039c8069df4c6da7mmaInI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS_gammaIn" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS_gammaIn"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_SS_gammaIn</h2>
+<p>
+<span class="ModelicaDescription">Scalar to scalar convection, externally provided heat transfer coefficient</span>
+<br>
+<br><img src="EEB.Components.BaseCompon039c8069df4c6da7mmaInD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SS_gammaIn">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>S</td><td>1</td><td>Area, both sides [m2]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>gamma</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>ss1</td><td>Scalar side 1</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>ss2</td><td>Scalar side 2</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_SS_gammaIn <span class="ModelicaComment">&quot;Scalar to scalar convection, externally provided heat transfer coefficient&quot;</span>
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a> S = 1 <span class="ModelicaComment">&quot;Area, both sides&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> gamma;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> ss1 <span class="ModelicaComment">&quot;Scalar side 1&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> ss2 <span class="ModelicaComment">&quot;Scalar side 2&quot;</span>;
+<span class="ModelicaKeyword">equation </span>
+  ss1.Q_flow + ss2.Q_flow = 0;
+  ss1.Q_flow = gamma * S * (ss1.T - ss2.T);
+<span class="ModelicaKeyword">end </span>Convection_SS_gammaIn;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_SV<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompond79b5b4708dbab6fon_SVI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_SV</h2>
+<p>
+<span class="ModelicaDescription">Scalar to vector convection, fixed heat transfer coefficient</span>
+<br>
+<br><img src="EEB.Components.BaseCompond79b5b4708dbab6fon_SVD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>n</td><td>2</td><td>Lumps, vector side</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>S</td><td>1</td><td>Area, both sides [m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gamma</td><td>5</td><td>Heat transfer coefficient [W/(m2.K)]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>ss</td><td>Scalar side</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>HeatPortVec</a></td><td>vs</td><td>Vector side</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_SV <span class="ModelicaComment">&quot;Scalar to vector convection, fixed heat transfer coefficient&quot;</span>
+  <span class="ModelicaKeyword">parameter </span>Integer n = 2 <span class="ModelicaComment">&quot;Lumps, vector side&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a> S = 1 <span class="ModelicaComment">&quot;Area, both sides&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a> gamma = 5 <span class="ModelicaComment">&quot;Heat transfer coefficient&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> ss <span class="ModelicaComment">&quot;Scalar side&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>Interfaces.Thermal.HeatPortVec</a> vs(n = n) <span class="ModelicaComment">&quot;Vector side&quot;</span>;
+<span class="ModelicaKeyword">equation </span>
+  ss.Q_flow +<span class="ModelicaFunction"> sum</span>(vs.Q_flow) = 0;
+  <span class="ModelicaKeyword">for </span>i<span class="ModelicaKeyword"> in </span>1:n<span class="ModelicaKeyword"> loop</span>
+    vs.Q_flow[i] = gamma * S / n * (vs.T[i] - ss.T);
+  <span class="ModelicaKeyword">end for</span>;
+<span class="ModelicaKeyword">end </span>Convection_SV;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_SV_gammaIn<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon4ed0514cdf4c68a7mmaInI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV_gammaIn" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV_gammaIn"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_SV_gammaIn</h2>
+<p>
+<span class="ModelicaDescription">Scalar to vector convection, externally provided heat transfer coefficient</span>
+<br>
+<br><img src="EEB.Components.BaseCompon4ed0514cdf4c68a7mmaInD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_SV_gammaIn">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>n</td><td>2</td><td>Lumps, vector side</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>S</td><td>1</td><td>Area, both sides [m2]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>ss</td><td>Scalar side</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>HeatPortVec</a></td><td>vs</td><td>Vector side</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>gamma</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_SV_gammaIn <span class="ModelicaComment">&quot;Scalar to vector convection, externally provided heat transfer coefficient&quot;</span>
+  <span class="ModelicaKeyword">parameter </span>Integer n = 2 <span class="ModelicaComment">&quot;Lumps, vector side&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a> S = 1 <span class="ModelicaComment">&quot;Area, both sides&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> ss <span class="ModelicaComment">&quot;Scalar side&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>Interfaces.Thermal.HeatPortVec</a> vs(n = n) <span class="ModelicaComment">&quot;Vector side&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> gamma;
+<span class="ModelicaKeyword">equation </span>
+  ss.Q_flow +<span class="ModelicaFunction"> sum</span>(vs.Q_flow) = 0;
+  <span class="ModelicaKeyword">for </span>i<span class="ModelicaKeyword"> in </span>1:n<span class="ModelicaKeyword"> loop</span>
+    vs.Q_flow[i] = gamma * S / n * (vs.T[i] - ss.T);
+  <span class="ModelicaKeyword">end for</span>;
+<span class="ModelicaKeyword">end </span>Convection_SV_gammaIn;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_VV<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompond79b5cd008dbabcfon_VVI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_VV</h2>
+<p>
+<span class="ModelicaDescription">Vector to vector convection, fixed heat transfer coefficient</span>
+<br>
+<br><img src="EEB.Components.BaseCompond79b5cd008dbabcfon_VVD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>n</td><td>2</td><td>Lumps, both sides</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>S</td><td>1</td><td>Area, both sides [m2]</td></tr>
+<tr><td>Boolean</td><td>counterFlow</td><td>false</td><td>Swap vectors for counterflow</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>gamma</td><td>5</td><td>Heat transfer coefficient [W/(m2.K)]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>HeatPortVec</a></td><td>vs1</td><td>side vector</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>HeatPortVec</a></td><td>vs2</td><td>side vector</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_VV <span class="ModelicaComment">&quot;Vector to vector convection, fixed heat transfer coefficient&quot;</span>
+  <span class="ModelicaKeyword">parameter </span>Integer n = 2 <span class="ModelicaComment">&quot;Lumps, both sides&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a> S = 1 <span class="ModelicaComment">&quot;Area, both sides&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Boolean counterFlow = false <span class="ModelicaComment">&quot;Swap vectors for counterflow&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a> gamma = 5 <span class="ModelicaComment">&quot;Heat transfer coefficient&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>Interfaces.Thermal.HeatPortVec</a> vs1(n = n) <span class="ModelicaComment">&quot;side vector&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>Interfaces.Thermal.HeatPortVec</a> vs2(n = n) <span class="ModelicaComment">&quot;side vector&quot;</span>;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaKeyword">for </span>i<span class="ModelicaKeyword"> in </span>1:n<span class="ModelicaKeyword"> loop</span>
+    <span class="ModelicaKeyword">if </span>counterFlow<span class="ModelicaKeyword"> then</span>
+      vs1.Q_flow[i] + vs2.Q_flow[n + 1 - i] = 0;
+      vs1.Q_flow[i] = gamma * S / n * (vs1.T[i] - vs2.T[n + 1 - i]);
+    <span class="ModelicaKeyword">else</span>
+      vs1.Q_flow[i] + vs2.Q_flow[i] = 0;
+      vs1.Q_flow[i] = gamma + S / n * (vs1.T[i] - vs2.T[i]);
+    <span class="ModelicaKeyword">end if</span>;
+  <span class="ModelicaKeyword">end for</span>;
+<span class="ModelicaKeyword">end </span>Convection_VV;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_VV_gammaIn<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseComponca543575df4cc8a7mmaInI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV_gammaIn" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV_gammaIn"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_VV_gammaIn</h2>
+<p>
+<span class="ModelicaDescription">Vector to vector convection, externally provided heat transfer coefficient</span>
+<br>
+<br><img src="EEB.Components.BaseComponca543575df4cc8a7mmaInD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_VV_gammaIn">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>n</td><td>2</td><td>Lumps, both sides</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a></td><td>S</td><td>1</td><td>Area, both sides [m2]</td></tr>
+<tr><td>Boolean</td><td>counterFlow</td><td>false</td><td>Swap vectors for counterflow</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>HeatPortVec</a></td><td>vs1</td><td>side vector</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>HeatPortVec</a></td><td>vs2</td><td>side vector</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>gamma</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_VV_gammaIn <span class="ModelicaComment">&quot;Vector to vector convection, externally provided heat transfer coefficient&quot;</span>
+  <span class="ModelicaKeyword">parameter </span>Integer n = 2 <span class="ModelicaComment">&quot;Lumps, both sides&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Area"
+>Area</a> S = 1 <span class="ModelicaComment">&quot;Area, both sides&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Boolean counterFlow = false <span class="ModelicaComment">&quot;Swap vectors for counterflow&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>Interfaces.Thermal.HeatPortVec</a> vs1(n = n) <span class="ModelicaComment">&quot;side vector&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPortVec"
+>Interfaces.Thermal.HeatPortVec</a> vs2(n = n) <span class="ModelicaComment">&quot;side vector&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> gamma;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaKeyword">for </span>i<span class="ModelicaKeyword"> in </span>1:n<span class="ModelicaKeyword"> loop</span>
+    <span class="ModelicaKeyword">if </span>counterFlow<span class="ModelicaKeyword"> then</span>
+      vs1.Q_flow[i] + vs2.Q_flow[n + 1 - i] = 0;
+      vs1.Q_flow[i] = gamma * S / n * (vs1.T[i] - vs2.T[n + 1 - i]);
+    <span class="ModelicaKeyword">else</span>
+      vs1.Q_flow[i] + vs2.Q_flow[i] = 0;
+      vs1.Q_flow[i] = gamma + S / n * (vs1.T[i] - vs2.T[i]);
+    <span class="ModelicaKeyword">end if</span>;
+  <span class="ModelicaKeyword">end for</span>;
+<span class="ModelicaKeyword">end </span>Convection_VV_gammaIn;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_Wall2air_BI74<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon884391fd49e9fe13_BI74I.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BI74" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BI74"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_Wall2air_BI74</h2>
+<p>
+<br><img src="EEB.Components.BaseCompon884391fd49e9fe13_BI74D.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BI74">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>L</td><td>5</td><td>wall surface length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>H</td><td>3</td><td>wall surface height [m]</td></tr>
+<tr><td>Boolean</td><td>vertical</td><td>true</td><td>true for vertical, false for horizontal</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>wall</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>air</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_Wall2air_BI74
+  <span class="ModelicaComment">// Brown &amp; Isfalt, 1974</span>
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a> L = 5 <span class="ModelicaComment">&quot;wall surface length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a> H = 3 <span class="ModelicaComment">&quot;wall surface height&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Boolean vertical = true <span class="ModelicaComment">&quot;true for vertical, false for horizontal&quot;</span>;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> wall;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> air;
+<span class="ModelicaKeyword">protected </span>
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits_Conversions_NonSIunits.html#Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"
+>Modelica.SIunits.Conversions.NonSIunits.Temperature_degC</a> DT;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a> g;
+<span class="ModelicaKeyword">equation </span>
+  DT = air.T - wall.T;
+  <span class="ModelicaKeyword">if </span>vertical<span class="ModelicaKeyword"> then</span>
+    g =<span class="ModelicaFunction"> smooth</span>(0,<span class="ModelicaFunction"> noEvent</span>(<span class="ModelicaKeyword">if </span>DT &lt;= 0.0<span class="ModelicaKeyword"> then </span>0.55<span class="ModelicaKeyword"> else </span>0.55 + 1.4 * DT ^ 2));
+  <span class="ModelicaKeyword">else</span>
+    g =<span class="ModelicaFunction"> smooth</span>(0,<span class="ModelicaFunction"> noEvent</span>(<span class="ModelicaKeyword">if </span>DT &lt;= 0.0<span class="ModelicaKeyword"> then </span>0.55<span class="ModelicaKeyword"> else </span>0.55 + 1.6 * DT ^ 2));
+  <span class="ModelicaKeyword">end if</span>;
+  wall.Q_flow + air.Q_flow = 0;
+  air.Q_flow = g * L * H * DT;
+<span class="ModelicaKeyword">end </span>Convection_Wall2air_BI74;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_Wall2air_BRIS<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon8845f6a349e99db4_BRISI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BRIS" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BRIS"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_Wall2air_BRIS</h2>
+<p>
+<br><img src="EEB.Components.BaseCompon884391fd49e9fe13_BI74D.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2air_BRIS">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>L</td><td>5</td><td>wall surface length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>H</td><td>3</td><td>wall surface height [m]</td></tr>
+<tr><td>Real</td><td>a</td><td>3</td><td>&nbsp;</td></tr>
+<tr><td>Real</td><td>c</td><td>0.1</td><td>&nbsp;</td></tr>
+<tr><td>Real</td><td>n</td><td>0.4</td><td>&nbsp;</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>wall</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>air</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_Wall2air_BRIS
+  <span class="ModelicaComment">// BRIS, Brown 1990</span>
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a> L = 5 <span class="ModelicaComment">&quot;wall surface length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a> H = 3 <span class="ModelicaComment">&quot;wall surface height&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real a = 3;
+  <span class="ModelicaKeyword">parameter </span>Real c = 0.1;
+  <span class="ModelicaKeyword">parameter </span>Real n = 0.4;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> wall;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> air;
+<span class="ModelicaKeyword">protected </span>
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits_Conversions_NonSIunits.html#Modelica.SIunits.Conversions.NonSIunits.Temperature_degC"
+>Modelica.SIunits.Conversions.NonSIunits.Temperature_degC</a> DT;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a> g;
+<span class="ModelicaKeyword">equation </span>
+  DT = air.T - wall.T;
+  g = a + c *<span class="ModelicaFunction"> smooth</span>(0,<span class="ModelicaFunction"> noEvent</span>(<span class="ModelicaFunction">abs</span>(DT))) ^ n;
+  wall.Q_flow + air.Q_flow = 0;
+  air.Q_flow = g * L * H * DT;
+<span class="ModelicaKeyword">end </span>Convection_Wall2air_BRIS;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Convection_Wall2Ext_Clarke<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon1c7faddea786c91elarkeI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2Ext_Clarke" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2Ext_Clarke"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.Convection_Wall2Ext_Clarke</h2>
+<p>
+<br><img src="EEB.Components.BaseCompon1c7faddea786c91elarkeD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.Convection_Wall2Ext_Clarke">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>L</td><td>5</td><td>wall surface length [m]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a></td><td>H</td><td>3</td><td>wall surface height [m]</td></tr>
+<tr><td>Boolean</td><td>fixedCoeff</td><td>false</td><td>switch the coefficient</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a></td><td>h0</td><td>25</td><td>fixed convective heat transfer [W/(m2.K)]</td></tr>
+<tr><td>Real</td><td>orientation</td><td>0</td><td>Orientation of the exiting normal direction relative to North: 0? North, clockwise</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>wall</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Convection_Wall2Ext_Clarke
+  <span class="ModelicaComment">// Clarke, 1985</span>
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a> L = 5 <span class="ModelicaComment">&quot;wall surface length&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Length"
+>Length</a> H = 3 <span class="ModelicaComment">&quot;wall surface height&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Boolean fixedCoeff = false <span class="ModelicaComment">&quot;switch the coefficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a> h0 = 25 <span class="ModelicaComment">&quot;fixed convective heat transfer&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real orientation(min = 0, max = 360) = 0
+    <span class="ModelicaComment">&quot;Orientation of the exiting normal direction relative to North: 0? North, clockwise&quot;</span>;
+  <span class="ModelicaKeyword">outer </span><a href="EEB_BoundaryConditions.html#EEB.BoundaryConditions.AmbientConditions"
+>BoundaryConditions.AmbientConditions</a> ambient_settings;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> wall;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatFlowRate"
+>HeatFlowRate</a> Q_ext <span class="ModelicaComment">&quot;Heat flow rate exchanged with the ambient&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.CoefficientOfHeatTransfer"
+>CoefficientOfHeatTransfer</a> g;
+  Boolean windward <span class="ModelicaComment">&quot;T windward, F leeward&quot;</span>;
+  Real u;
+<span class="ModelicaKeyword">equation </span>
+  windward =<span class="ModelicaFunction"> noEvent</span>(<span class="ModelicaFunction">abs</span>(ambient_settings.wdir - orientation)) &lt; 90;
+  <span class="ModelicaKeyword">if </span>windward<span class="ModelicaKeyword"> and </span>(ambient_settings.wv &lt; 0<span class="ModelicaKeyword"> or </span>ambient_settings.wv&gt;0)<span class="ModelicaKeyword"> then</span>
+    u =<span class="ModelicaFunction"> smooth</span>(0,<span class="ModelicaFunction"> noEvent</span>(<span class="ModelicaKeyword">if </span>ambient_settings.wv &lt; 2<span class="ModelicaKeyword"> then </span>0.5<span class="ModelicaKeyword"> else </span>0.25 * ambient_settings.wv));
+  <span class="ModelicaKeyword">else</span>
+    u = 0.3 + 0.05 * ambient_settings.wv;
+  <span class="ModelicaKeyword">end if</span>;
+  <span class="ModelicaKeyword">if </span>u &lt; 4.88<span class="ModelicaKeyword"> then</span>
+    g = 5.6780000000 * (1.09 + 0.23 * (u / 0.3048) ^ 1.00);
+  <span class="ModelicaKeyword">else</span>
+    g = 0.5486590003 * (0.00 + 0.53 * (u / 0.3048) ^ 0.78);
+  <span class="ModelicaKeyword">end if</span>;
+  wall.Q_flow + Q_ext = 0;
+  <span class="ModelicaKeyword">if </span>fixedCoeff<span class="ModelicaKeyword"> then</span>
+    Q_ext = h0 * L * H * (ambient_settings.Tamb - wall.T);
+  <span class="ModelicaKeyword">else</span>
+    Q_ext = g * L * H * (ambient_settings.Tamb - wall.T);
+  <span class="ModelicaKeyword">end if</span>;
+<span class="ModelicaKeyword">end </span>Convection_Wall2Ext_Clarke;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE PrescribedHeatFlowThrough<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseComponc09e450f4a0e9154roughI.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.PrescribedHeatFlowThrough" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Thermal.HeatTransfer.PrescribedHeatFlowThrough"></a><a href="EEB_Components_BaseComponents_Thermal_HeatTransfer.html#EEB.Components.BaseComponents.Thermal.HeatTransfer"
+>EEB.Components.BaseComponents.Thermal.HeatTransfer</a>.PrescribedHeatFlowThrough</h2>
+<p>
+<br><img src="EEB.Components.BaseComponc09e450f4a0e9154roughD.png" alt="EEB.Components.BaseComponents.Thermal.HeatTransfer.PrescribedHeatFlowThrough">
+</p>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>heatSrc</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>HeatPort</a></td><td>heatSnk</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>pwr</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> PrescribedHeatFlowThrough
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> heatSrc;
+  <a href="EEB_Interfaces_Thermal.html#EEB.Interfaces.Thermal.HeatPort"
+>Interfaces.Thermal.HeatPort</a> heatSnk;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> pwr;
+<span class="ModelicaKeyword">equation </span>
+  heatSrc.Q_flow + heatSnk.Q_flow = 0;
+  heatSrc.Q_flow = pwr;
+<span class="ModelicaKeyword">end </span>PrescribedHeatFlowThrough;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Mon Jun  1 16:09:25 2020.
+</address>
+</body>
+</html>

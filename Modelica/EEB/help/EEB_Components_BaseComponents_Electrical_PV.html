@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EEB.Components.BaseComponents.Electrical.PV</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+*       { font-size: 100%; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 90%; font-family: Courier, monospace; white-space: pre; } /* For the Modelica code (in exported html). */
+h4      { font-size: 100%; font-weight: bold; color: green; } 
+h3      { font-size: 110%; font-weight: bold; color: green; }
+h2      { font-size: 130%; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { padding: 2px; border: 1px solid #808080; vertical-align: top; }
+th      { padding: 2px; border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+pre, code {font-family: "Courier New", monospace;}
+pre {white-space: pre; overflow-x : hidden;}
+.ModelicaDescription {font-weight: bold;} /* For the description string of the class. */
+.ModelicaBaseClass {} /* For the list of base-classes at the of the description. */
+.ModelicaKeyword { color: blue; font-weight: normal; font-style: normal; } /* Keywords in Modelica. */
+.ModelicaComment { color: #006400;  font-weight: normal; font-style: normal;} /* All three variants of comments in Modelica.  */
+.ModelicaString { color: #006400;  font-weight: normal; font-style: normal;} /* String constants. */
+.ModelicaClass { color: red; font-weight: normal; font-style: normal;} /* Formatting the names of referenced classes (for base-class and components). */
+.ModelicaFunction { color: red; font-weight: normal; font-style: normal;} /* Formatting for called functions. */
+.ModelicaTablePackageContent { } /* The table of contents for each package. */
+.ModelicaTableCrossReference { } /* The optional cross-reference table. */
+.ModelicaTableInputs {} /* The table of inputs for a function. */
+.ModelicaTableOutputs {} /* The table of outputs for a function. */
+.ModelicaTableParameters {} /* The table of parameters for a model/block. */
+.ModelicaTableConnectors {} /* The table of connectors for a model/block. */
+.ModelicaTableContents {} /* The table of contents for a connector. */
+.ModelicaStartAttribute { font-weight: bold; } /* The formatting used for start-attribute in the table of parameters, to separate them from parameter values. */
+.ModelicaParameterTab { background-color: #c0c0c0; font-weight: bold; } /* The tab-heading in the table of parameters */
+.ModelicaParameterGroup { background-color: #e0e0e0; } /* The group-heading in the table of parameters */
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE PV<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Components.BaseComponents.Electrical.PV"></a><a href="EEB_Components_BaseComponents_Electrical.html#EEB.Components.BaseComponents.Electrical"
+>EEB.Components.BaseComponents.Electrical</a>.PV</h2>
+<p>
+</p>
+<h3>Package Content</h3>
+<table summary="Package Content" class="ModelicaTablePackageContent">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon95cc587f7fb0dac0.CellS.png" alt="EEB.Components.BaseComponents.Electrical.PV.Cell" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Electrical_PV.html#EEB.Components.BaseComponents.Electrical.PV.Cell"
+>Cell</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon40fc9141d7cf681boduleS.png" alt="EEB.Components.BaseComponents.Electrical.PV.Module" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Electrical_PV.html#EEB.Components.BaseComponents.Electrical.PV.Module"
+>Module</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Cell<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon95cc587f7fb0dac0.CellI.png" alt="EEB.Components.BaseComponents.Electrical.PV.Cell" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Electrical.PV.Cell"></a><a href="EEB_Components_BaseComponents_Electrical_PV.html#EEB.Components.BaseComponents.Electrical.PV"
+>EEB.Components.BaseComponents.Electrical.PV</a>.Cell</h2>
+<p>
+<br><img src="EEB.Components.BaseCompon95cc587f7fb0dac0.CellD.png" alt="EEB.Components.BaseComponents.Electrical.PV.Cell">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a></td><td>irs</td><td>1e-6</td><td>Diode reverse seturation current [A]</td></tr>
+<tr><td>Real</td><td>dif</td><td>5</td><td>Diode ideality factor</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a></td><td>Rp</td><td>1e3</td><td>Parallel (shunt) resistance [Ohm]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a></td><td>Rs</td><td>0.1</td><td>Series resistance [Ohm]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a></td><td>il0</td><td>0.2</td><td>Nominal light (photo) current [A]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatFlux"
+>HeatFlux</a></td><td>Phi0</td><td>1000</td><td>Nominal heat flux [W/m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>T0</td><td>293.15</td><td>Nominal temperature [K]</td></tr>
+<tr><td>Real</td><td>Kphi</td><td>-0.01</td><td>Light (photo) current temperature corfficient</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatCapacity"
+>HeatCapacity</a></td><td>C</td><td>5</td><td>Total heat capacity [J/K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>Tstart</td><td>293.15</td><td>Initial temperature [K]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.PositivePin"
+>PositivePin</a></td><td>p</td><td>&nbsp;</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.NegativePin"
+>NegativePin</a></td><td>n</td><td>&nbsp;</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Thermal_HeatTransfer_Interfaces.html#Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a"
+>HeatPort_a</a></td><td>surf</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>Phi</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Cell
+  <span class="ModelicaKeyword">constant </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.ElectricCharge"
+>ElectricCharge</a> q = 1.6021892e-19 <span class="ModelicaComment">&quot;Elementary (electron) charge&quot;</span>;
+  <span class="ModelicaKeyword">constant </span>Real k = 1.380648813e-23 <span class="ModelicaComment">&quot;Boltzmann contant (J/K)&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a> irs = 1e-6 <span class="ModelicaComment">&quot;Diode reverse seturation current&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real dif = 5 <span class="ModelicaComment">&quot;Diode ideality factor&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a> Rp = 1e3 <span class="ModelicaComment">&quot;Parallel (shunt) resistance&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a> Rs = 0.1 <span class="ModelicaComment">&quot;Series resistance&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a> il0 = 0.2 <span class="ModelicaComment">&quot;Nominal light (photo) current&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatFlux"
+>HeatFlux</a> Phi0 = 1000 <span class="ModelicaComment">&quot;Nominal heat flux&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> T0 = 293.15 <span class="ModelicaComment">&quot;Nominal temperature&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real Kphi = -0.01 <span class="ModelicaComment">&quot;Light (photo) current temperature corfficient&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatCapacity"
+>HeatCapacity</a> C = 5 <span class="ModelicaComment">&quot;Total heat capacity&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> Tstart = 293.15 <span class="ModelicaComment">&quot;Initial temperature&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Voltage"
+>Voltage</a> vj <span class="ModelicaComment">&quot;Junction voltage&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a> il <span class="ModelicaComment">&quot;Light (photo) current&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a> id <span class="ModelicaComment">&quot;Diode current&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a> ip <span class="ModelicaComment">&quot;Parallel (shunt) current&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> T(start = Tstart);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Voltage"
+>Voltage</a> v;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a> i;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.PositivePin"
+>Modelica.Electrical.Analog.Interfaces.PositivePin</a> p;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.NegativePin"
+>Modelica.Electrical.Analog.Interfaces.NegativePin</a> n;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Thermal_HeatTransfer_Interfaces.html#Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a"
+>Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a</a> surf;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> Phi;
+<span class="ModelicaKeyword">equation </span>
+  v = p.v - n.v;
+  0 = p.i + n.i;
+  i = -p.i;
+  T = surf.T;
+  il = il0 * Phi / Phi0 * (1 + Kphi * (T - T0));
+  id = irs * (<span class="ModelicaFunction">exp</span>(q * vj / dif / k / T) - 1);
+  vj = Rp * ip;
+  v = vj - Rs * i;
+  i = il - id - ip;
+  C *<span class="ModelicaFunction"> der</span>(T) = surf.Q_flow + vj * id + vj * ip + (vj - v) * i;
+<span class="ModelicaKeyword">end </span>Cell;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Module<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon40fc9141d7cf681boduleI.png" alt="EEB.Components.BaseComponents.Electrical.PV.Module" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Electrical.PV.Module"></a><a href="EEB_Components_BaseComponents_Electrical_PV.html#EEB.Components.BaseComponents.Electrical.PV"
+>EEB.Components.BaseComponents.Electrical.PV</a>.Module</h2>
+<p>
+<br><img src="EEB.Components.BaseCompon40fc9141d7cf681boduleD.png" alt="EEB.Components.BaseComponents.Electrical.PV.Module">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a></td><td>Ron_d</td><td>1.E-5</td><td>Diodes Ron [Ohm]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Conductance"
+>Conductance</a></td><td>Goff_d</td><td>1.E-5</td><td>Diodes Goff [S]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Voltage"
+>Voltage</a></td><td>Vt_d</td><td>0.7</td><td>Diodes threshold V [V]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a></td><td>Rp</td><td>200</td><td>Module parallel R [Ohm]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a></td><td>Rs</td><td>0.02</td><td>Module series R [Ohm]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a></td><td>Isc</td><td>8.33</td><td>Short circuit current [A]</td></tr>
+<tr><td>Real</td><td>alpha</td><td>0.02</td><td>Current/temperature gain</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatFlux"
+>HeatFlux</a></td><td>Irr0</td><td>1000</td><td>Reference radiative flux [W/m2]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a></td><td>T0</td><td>300</td><td>Reference temperature [K]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a></td><td>M</td><td>19</td><td>Module mass [kg]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a></td><td>cp</td><td>300</td><td>Module cp [J/(kg.K)]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.PositivePin"
+>PositivePin</a></td><td>p</td><td>&nbsp;</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.NegativePin"
+>NegativePin</a></td><td>n</td><td>&nbsp;</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Thermal_HeatTransfer_Interfaces.html#Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a"
+>HeatPort_a</a></td><td>heatPort</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>Phi</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Module
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a> Ron_d = 1.E-5 <span class="ModelicaComment">&quot;Diodes Ron&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Conductance"
+>Conductance</a> Goff_d = 1.E-5 <span class="ModelicaComment">&quot;Diodes Goff&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Voltage"
+>Voltage</a> Vt_d = 0.7 <span class="ModelicaComment">&quot;Diodes threshold V&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a> Rp = 200 <span class="ModelicaComment">&quot;Module parallel R&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Resistance"
+>Resistance</a> Rs = 0.02 <span class="ModelicaComment">&quot;Module series R&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Current"
+>Current</a> Isc = 8.33 <span class="ModelicaComment">&quot;Short circuit current&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real alpha = 0.02 <span class="ModelicaComment">&quot;Current/temperature gain&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.HeatFlux"
+>HeatFlux</a> Irr0 = 1000 <span class="ModelicaComment">&quot;Reference radiative flux&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Temperature"
+>Temperature</a> T0 = 300 <span class="ModelicaComment">&quot;Reference temperature&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Mass"
+>Mass</a> M = 19 <span class="ModelicaComment">&quot;Module mass&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.SpecificHeatCapacity"
+>SpecificHeatCapacity</a> cp = 300 <span class="ModelicaComment">&quot;Module cp&quot;</span>;
+
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Ideal.html#Modelica.Electrical.Analog.Ideal.IdealDiode"
+>Modelica.Electrical.Analog.Ideal.IdealDiode</a> D1(Ron = Ron_d, Goff = Goff_d, Vknee = Vt_d, useHeatPort = true);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Ideal.html#Modelica.Electrical.Analog.Ideal.IdealDiode"
+>Modelica.Electrical.Analog.Ideal.IdealDiode</a> D2(Ron = Ron_d, Goff = Goff_d, Vknee = Vt_d, useHeatPort = true);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Sources.html#Modelica.Electrical.Analog.Sources.SignalCurrent"
+>Modelica.Electrical.Analog.Sources.SignalCurrent</a> signalCurrent;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.PositivePin"
+>Modelica.Electrical.Analog.Interfaces.PositivePin</a> p;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Interfaces.html#Modelica.Electrical.Analog.Interfaces.NegativePin"
+>Modelica.Electrical.Analog.Interfaces.NegativePin</a> n;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Basic.html#Modelica.Electrical.Analog.Basic.HeatingResistor"
+>Modelica.Electrical.Analog.Basic.HeatingResistor</a> Rpar(R_ref = Rp);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Electrical_Analog_Basic.html#Modelica.Electrical.Analog.Basic.HeatingResistor"
+>Modelica.Electrical.Analog.Basic.HeatingResistor</a> Rser(R_ref = Rs);
+  <a href="EEB_Components_BaseComponents_Thermal_Capacities.html#EEB.Components.BaseComponents.Thermal.Capacities.MassT"
+>Thermal.Capacities.MassT</a> heatCap(Tstart = T0, M = M, cp = cp);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Thermal_HeatTransfer_Interfaces.html#Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a"
+>Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a</a> heatPort;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> Phi;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Gain"
+>Modelica.Blocks.Math.Gain</a> S(k = Isc / Irr0);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Gain"
+>Modelica.Blocks.Math.Gain</a> S1(k = alpha);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Thermal_HeatTransfer_Sensors.html#Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor"
+>Modelica.Thermal.HeatTransfer.Sensors.TemperatureSensor</a> sT;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Feedback"
+>Modelica.Blocks.Math.Feedback</a> f1;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Sources.html#Modelica.Blocks.Sources.Constant"
+>Modelica.Blocks.Sources.Constant</a> t0(k = T0);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Math.html#Modelica.Blocks.Math.Add"
+>Modelica.Blocks.Math.Add</a> add;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaFunction">connect</span>(Rser.n, p);
+  <span class="ModelicaFunction">connect</span>(Rser.p, Rpar.n);
+  <span class="ModelicaFunction">connect</span>(Rser.p, D2.p);
+  <span class="ModelicaFunction">connect</span>(Rser.p, D1.p);
+  <span class="ModelicaFunction">connect</span>(Rser.p, signalCurrent.n);
+  <span class="ModelicaFunction">connect</span>(n, Rpar.p);
+  <span class="ModelicaFunction">connect</span>(n, D2.n);
+  <span class="ModelicaFunction">connect</span>(n, D1.n);
+  <span class="ModelicaFunction">connect</span>(n, signalCurrent.p);
+  <span class="ModelicaFunction">connect</span>(heatPort, Rser.heatPort);
+  <span class="ModelicaFunction">connect</span>(Phi, S.u);
+  <span class="ModelicaFunction">connect</span>(sT.port, heatPort);
+  <span class="ModelicaFunction">connect</span>(sT.T, f1.u1);
+  <span class="ModelicaFunction">connect</span>(t0.y, f1.u2);
+  <span class="ModelicaFunction">connect</span>(f1.y, S1.u);
+  <span class="ModelicaFunction">connect</span>(S.y, add.u2);
+  <span class="ModelicaFunction">connect</span>(add.y, signalCurrent.i);
+  <span class="ModelicaFunction">connect</span>(S1.y, add.u1);
+  <span class="ModelicaFunction">connect</span>(Rser.heatPort, heatCap.surf);
+  <span class="ModelicaFunction">connect</span>(Rpar.heatPort, heatCap.surf);
+  <span class="ModelicaFunction">connect</span>(D2.heatPort, heatCap.surf);
+  <span class="ModelicaFunction">connect</span>(D1.heatPort, heatCap.surf);
+<span class="ModelicaKeyword">end </span>Module;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Mon Jun  1 16:09:26 2020.
+</address>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EEB.Components.BaseComponents.Water.Pumps</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+*       { font-size: 100%; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 90%; font-family: Courier, monospace; white-space: pre; } /* For the Modelica code (in exported html). */
+h4      { font-size: 100%; font-weight: bold; color: green; } 
+h3      { font-size: 110%; font-weight: bold; color: green; }
+h2      { font-size: 130%; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { padding: 2px; border: 1px solid #808080; vertical-align: top; }
+th      { padding: 2px; border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+pre, code {font-family: "Courier New", monospace;}
+pre {white-space: pre; overflow-x : hidden;}
+.ModelicaDescription {font-weight: bold;} /* For the description string of the class. */
+.ModelicaBaseClass {} /* For the list of base-classes at the of the description. */
+.ModelicaKeyword { color: blue; font-weight: normal; font-style: normal; } /* Keywords in Modelica. */
+.ModelicaComment { color: #006400;  font-weight: normal; font-style: normal;} /* All three variants of comments in Modelica.  */
+.ModelicaString { color: #006400;  font-weight: normal; font-style: normal;} /* String constants. */
+.ModelicaClass { color: red; font-weight: normal; font-style: normal;} /* Formatting the names of referenced classes (for base-class and components). */
+.ModelicaFunction { color: red; font-weight: normal; font-style: normal;} /* Formatting for called functions. */
+.ModelicaTablePackageContent { } /* The table of contents for each package. */
+.ModelicaTableCrossReference { } /* The optional cross-reference table. */
+.ModelicaTableInputs {} /* The table of inputs for a function. */
+.ModelicaTableOutputs {} /* The table of outputs for a function. */
+.ModelicaTableParameters {} /* The table of parameters for a model/block. */
+.ModelicaTableConnectors {} /* The table of connectors for a model/block. */
+.ModelicaTableContents {} /* The table of contents for a connector. */
+.ModelicaStartAttribute { font-weight: bold; } /* The formatting used for start-attribute in the table of parameters, to separate them from parameter values. */
+.ModelicaParameterTab { background-color: #c0c0c0; font-weight: bold; } /* The tab-heading in the table of parameters */
+.ModelicaParameterGroup { background-color: #e0e0e0; } /* The group-heading in the table of parameters */
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Pumps<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Components.BaseComponents.Water.Pumps"></a><a href="EEB_Components_BaseComponents_Water.html#EEB.Components.BaseComponents.Water"
+>EEB.Components.BaseComponents.Water</a>.Pumps</h2>
+<p>
+</p>
+<h3>Package Content</h3>
+<table summary="Package Content" class="ModelicaTablePackageContent">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon61d05647854ef95betricS.png" alt="EEB.Components.BaseComponents.Water.Pumps.WaterPump_Volumetric" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Water_Pumps.html#EEB.Components.BaseComponents.Water.Pumps.WaterPump_Volumetric"
+>WaterPump_Volumetric</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Components.BaseCompon60642ae378a9d153fugalS.png" alt="EEB.Components.BaseComponents.Water.Pumps.WaterPump_Centrifugal" width="20" height="20" align="top">&nbsp;<a href="EEB_Components_BaseComponents_Water_Pumps.html#EEB.Components.BaseComponents.Water.Pumps.WaterPump_Centrifugal"
+>WaterPump_Centrifugal</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WaterPump_Volumetric<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon61d05647854ef95betricI.png" alt="EEB.Components.BaseComponents.Water.Pumps.WaterPump_Volumetric" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Water.Pumps.WaterPump_Volumetric"></a><a href="EEB_Components_BaseComponents_Water_Pumps.html#EEB.Components.BaseComponents.Water.Pumps"
+>EEB.Components.BaseComponents.Water.Pumps</a>.WaterPump_Volumetric</h2>
+<p>
+<br><img src="EEB.Components.BaseCompon61d05647854ef95betricD.png" alt="EEB.Components.BaseComponents.Water.Pumps.WaterPump_Volumetric">
+</p>
+<h3>Information</h3>
+<p><span class="ModelicaBaseClass">Extends from <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.PartialTwoPort_water"
+>Interfaces.Water.PartialTwoPort_water</a> (Partial component with two ports).</span></p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.VolumeFlowRate"
+>VolumeFlowRate</a></td><td>qmax</td><td>0.0005</td><td>volume flowrate at cmd=1 [m3/s]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.VolumeFlowRate"
+>VolumeFlowRate</a></td><td>qstart</td><td>0</td><td>[m3/s]</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a></td><td>T</td><td>0.5</td><td>pump TC [s]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>cmd</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> WaterPump_Volumetric
+  <span class="ModelicaKeyword">extends </span><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.PartialTwoPort_water"
+>Interfaces.Water.PartialTwoPort_water</a>;
+  <a href="EEB_Media_Substances.html#EEB.Media.Substances.SubcooledWater"
+>Media.Substances.SubcooledWater</a> water;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.VolumeFlowRate"
+>VolumeFlowRate</a> qmax = 0.0005 <span class="ModelicaComment">&quot;volume flowrate at cmd=1&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.VolumeFlowRate"
+>VolumeFlowRate</a> qstart = 0;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a> T = 0.5 <span class="ModelicaComment">&quot;pump TC&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.VolumeFlowRate"
+>VolumeFlowRate</a> q(start = qstart);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> cmd;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaComment">// no mass storage inside the pump</span>
+  w1 + w2 = 0;
+  <span class="ModelicaComment">// pump dynamics</span>
+  q + T *<span class="ModelicaFunction"> der</span>(q) = cmd * qmax;
+  <span class="ModelicaComment">// variable mass flow rate</span>
+  w1 = water.d * q;
+  water.p = 0.5 * (p1 + p2);
+  <span class="ModelicaComment">// mean fluid pressure</span>
+  <span class="ModelicaComment">// energy conservation</span>
+  hout1 =<span class="ModelicaFunction"> inStream</span>(water_flange2.h);
+  hout2 =<span class="ModelicaFunction"> inStream</span>(water_flange1.h);
+  <span class="ModelicaComment">// enthalpy boundary condition</span>
+  hout2 = water.h;
+<span class="ModelicaKeyword">end </span>WaterPump_Volumetric;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE WaterPump_Centrifugal<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Components.BaseCompon60642ae378a9d153fugalI.png" alt="EEB.Components.BaseComponents.Water.Pumps.WaterPump_Centrifugal" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Components.BaseComponents.Water.Pumps.WaterPump_Centrifugal"></a><a href="EEB_Components_BaseComponents_Water_Pumps.html#EEB.Components.BaseComponents.Water.Pumps"
+>EEB.Components.BaseComponents.Water.Pumps</a>.WaterPump_Centrifugal</h2>
+<p>
+<br><img src="EEB.Components.BaseCompon61d05647854ef95betricD.png" alt="EEB.Components.BaseComponents.Water.Pumps.WaterPump_Centrifugal">
+</p>
+<h3>Information</h3>
+<p><span class="ModelicaBaseClass">Extends from <a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.PartialTwoPort_water"
+>Interfaces.Water.PartialTwoPort_water</a> (Partial component with two ports).</span></p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a></td><td>DP0</td><td>5000</td><td>DP at w=0, cmd=1 [Pa]</td></tr>
+<tr><td>Real</td><td>DP1</td><td>200</td><td>pressure decr. ratio, cmd=1 Pa/(kg/s)^2</td></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a></td><td>T</td><td>0.5</td><td>pump TC [s]</td></tr>
+<tr><td>Real</td><td>cmdstart</td><td>0</td><td>&nbsp;</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange2</td><td>&nbsp;</td></tr>
+<tr><td><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.WaterFlange"
+>WaterFlange</a></td><td>water_flange1</td><td>&nbsp;</td></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>cmd</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> WaterPump_Centrifugal
+  <span class="ModelicaKeyword">extends </span><a href="EEB_Interfaces_Water.html#EEB.Interfaces.Water.PartialTwoPort_water"
+>Interfaces.Water.PartialTwoPort_water</a>;
+  <a href="EEB_Media_Substances.html#EEB.Media.Substances.SubcooledWater"
+>Media.Substances.SubcooledWater</a> water;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Pressure"
+>Pressure</a> DP0 = 5000 <span class="ModelicaComment">&quot;DP at w=0, cmd=1&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real DP1 = 200 <span class="ModelicaComment">&quot;pressure decr. ratio, cmd=1 Pa/(kg/s)^2&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a> T = 0.5 <span class="ModelicaComment">&quot;pump TC&quot;</span>;
+  <span class="ModelicaKeyword">parameter </span>Real cmdstart = 0;
+  Real x(start = cmdstart);
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> cmd;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaComment">// no mass storage inside the pump</span>
+  w1 + w2 = 0;
+  <span class="ModelicaComment">// command dynamics</span>
+  x + T *<span class="ModelicaFunction"> der</span>(x) = cmd;
+  <span class="ModelicaComment">// pressure drop</span>
+  p2 - p1 = DP0 * x - DP1 * x * w1*<span class="ModelicaFunction">noEvent</span>(<span class="ModelicaFunction">abs</span>(w1));
+  water.p = 0.5 * (p1 + p2);
+  <span class="ModelicaComment">// mean fluid pressure</span>
+  <span class="ModelicaComment">// energy conservation</span>
+  hout1 =<span class="ModelicaFunction"> inStream</span>(water_flange2.h);
+  hout2 =<span class="ModelicaFunction"> inStream</span>(water_flange1.h);
+  <span class="ModelicaComment">// enthalpy boundary condition</span>
+  hout1 = water.h;
+<span class="ModelicaKeyword">end </span>WaterPump_Centrifugal;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Mon Jun  1 16:09:24 2020.
+</address>
+</body>
+</html>

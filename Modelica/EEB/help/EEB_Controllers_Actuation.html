@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>EEB.Controllers.Actuation</title>
+<meta name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+*       { font-size: 100%; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 90%; font-family: Courier, monospace; white-space: pre; } /* For the Modelica code (in exported html). */
+h4      { font-size: 100%; font-weight: bold; color: green; } 
+h3      { font-size: 110%; font-weight: bold; color: green; }
+h2      { font-size: 130%; font-weight: bold; color: green; }
+address { font-weight: normal; }
+td      { padding: 2px; border: 1px solid #808080; vertical-align: top; }
+th      { padding: 2px; border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
+pre, code {font-family: "Courier New", monospace;}
+pre {white-space: pre; overflow-x : hidden;}
+.ModelicaDescription {font-weight: bold;} /* For the description string of the class. */
+.ModelicaBaseClass {} /* For the list of base-classes at the of the description. */
+.ModelicaKeyword { color: blue; font-weight: normal; font-style: normal; } /* Keywords in Modelica. */
+.ModelicaComment { color: #006400;  font-weight: normal; font-style: normal;} /* All three variants of comments in Modelica.  */
+.ModelicaString { color: #006400;  font-weight: normal; font-style: normal;} /* String constants. */
+.ModelicaClass { color: red; font-weight: normal; font-style: normal;} /* Formatting the names of referenced classes (for base-class and components). */
+.ModelicaFunction { color: red; font-weight: normal; font-style: normal;} /* Formatting for called functions. */
+.ModelicaTablePackageContent { } /* The table of contents for each package. */
+.ModelicaTableCrossReference { } /* The optional cross-reference table. */
+.ModelicaTableInputs {} /* The table of inputs for a function. */
+.ModelicaTableOutputs {} /* The table of outputs for a function. */
+.ModelicaTableParameters {} /* The table of parameters for a model/block. */
+.ModelicaTableConnectors {} /* The table of connectors for a model/block. */
+.ModelicaTableContents {} /* The table of contents for a connector. */
+.ModelicaStartAttribute { font-weight: bold; } /* The formatting used for start-attribute in the table of parameters, to separate them from parameter values. */
+.ModelicaParameterTab { background-color: #c0c0c0; font-weight: bold; } /* The tab-heading in the table of parameters */
+.ModelicaParameterGroup { background-color: #e0e0e0; } /* The group-heading in the table of parameters */
+</style>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Actuation<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="EEB.Controllers.Actuation"></a><a href="EEB_Controllers.html#EEB.Controllers"
+>EEB.Controllers</a>.Actuation</h2>
+<p>
+</p>
+<h3>Package Content</h3>
+<table summary="Package Content" class="ModelicaTablePackageContent">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="EEB.Controllers.Actuation.PWMS.png" alt="EEB.Controllers.Actuation.PWM" width="20" height="20" align="top">&nbsp;<a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation.PWM"
+>PWM</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Controllers.Actuation.PWMS.png" alt="EEB.Controllers.Actuation.TDO" width="20" height="20" align="top">&nbsp;<a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation.TDO"
+>TDO</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Controllers.Actuation.PWMS.png" alt="EEB.Controllers.Actuation.Distributor_uniform" width="20" height="20" align="top">&nbsp;<a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation.Distributor_uniform"
+>Distributor_uniform</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Controllers.Actuation.PWMS.png" alt="EEB.Controllers.Actuation.DaisyChain_uniform" width="20" height="20" align="top">&nbsp;<a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation.DaisyChain_uniform"
+>DaisyChain_uniform</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Controllers.Actuation.SplitRange_01S.png" alt="EEB.Controllers.Actuation.SplitRange_01" width="20" height="20" align="top">&nbsp;<a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation.SplitRange_01"
+>SplitRange_01</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Controllers.Actuationc3b1df8a17dd381dinearS.png" alt="EEB.Controllers.Actuation.RangeConv_Linear" width="20" height="20" align="top">&nbsp;<a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation.RangeConv_Linear"
+>RangeConv_Linear</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="EEB.Controllers.Actuationc3b1df8a17dd381dinearS.png" alt="EEB.Controllers.Actuation.DaisyChain_InRanges_Out01" width="20" height="20" align="top">&nbsp;<a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation.DaisyChain_InRanges_Out01"
+>DaisyChain_InRanges_Out01</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE PWM<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Controllers.Actuation.PWMI.png" alt="EEB.Controllers.Actuation.PWM" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Controllers.Actuation.PWM"></a><a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation"
+>EEB.Controllers.Actuation</a>.PWM</h2>
+<p>
+<br><img src="EEB.Controllers.Actuation.PWMD.png" alt="EEB.Controllers.Actuation.PWM">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Frequency"
+>Frequency</a></td><td>fPWM</td><td>1000</td><td>PWM f [Hz]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>cmd01</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>PWM</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> PWM
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> cmd01;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> PWM;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Frequency"
+>Frequency</a> fPWM = 1000 <span class="ModelicaComment">&quot;PWM f&quot;</span>;
+  <span class="ModelicaKeyword">discrete </span>Real pwm;
+  <span class="ModelicaKeyword">discrete </span>Real timeNextEv;
+<span class="ModelicaKeyword">equation </span>
+  PWM = pwm;
+<span class="ModelicaKeyword">initial </span><span class="ModelicaKeyword">algorithm </span>
+  timeNextEv := 0;
+<span class="ModelicaKeyword">algorithm </span>
+  <span class="ModelicaKeyword">when </span><span class="ModelicaFunction">sample</span>(0, 1 / fPWM)<span class="ModelicaKeyword"> then</span>
+    <span class="ModelicaKeyword">if </span>cmd01 &lt;= 0<span class="ModelicaKeyword"> then</span>
+      pwm := 0;
+      timeNextEv := -1;
+    <span class="ModelicaKeyword">elseif </span>cmd01 &gt;= 1<span class="ModelicaKeyword"> then</span>
+      pwm := 1;
+      timeNextEv := -1;
+    <span class="ModelicaKeyword">else</span>
+      pwm := 1;
+      timeNextEv := time + cmd01 / fPWM;
+    <span class="ModelicaKeyword">end if</span>;
+  <span class="ModelicaKeyword">end when</span>;
+  <span class="ModelicaKeyword">when </span>time &gt;= timeNextEv<span class="ModelicaKeyword"> and </span>timeNextEv &gt;= 0<span class="ModelicaKeyword"> then</span>
+    <span class="ModelicaKeyword">if </span>cmd01 &gt; 0<span class="ModelicaKeyword"> and </span>cmd01 &lt; 1<span class="ModelicaKeyword"> then</span>
+      pwm := 0;
+    <span class="ModelicaKeyword">end if</span>;
+  <span class="ModelicaKeyword">end when</span>;
+<span class="ModelicaKeyword">end </span>PWM;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE TDO<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Controllers.Actuation.PWMI.png" alt="EEB.Controllers.Actuation.TDO" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Controllers.Actuation.TDO"></a><a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation"
+>EEB.Controllers.Actuation</a>.TDO</h2>
+<p>
+<br><img src="EEB.Controllers.Actuation.TDOD.png" alt="EEB.Controllers.Actuation.TDO">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a></td><td>Ttdo</td><td>1</td><td>TDO timebase [s]</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>cmd01</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>TDO</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> TDO
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> cmd01;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> TDO;
+  <span class="ModelicaKeyword">parameter </span><a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_SIunits.html#Modelica.SIunits.Time"
+>Time</a> Ttdo = 1 <span class="ModelicaComment">&quot;TDO timebase&quot;</span>;
+  <span class="ModelicaKeyword">discrete </span>Real tdo;
+  <span class="ModelicaKeyword">discrete </span>Real timeNextEv;
+<span class="ModelicaKeyword">equation </span>
+  TDO = tdo;
+<span class="ModelicaKeyword">initial </span><span class="ModelicaKeyword">algorithm </span>
+  timeNextEv := 0;
+  tdo := 0;
+<span class="ModelicaKeyword">algorithm </span>
+  <span class="ModelicaKeyword">when </span><span class="ModelicaFunction">sample</span>(0, Ttdo)<span class="ModelicaKeyword"> then</span>
+    <span class="ModelicaKeyword">if </span>cmd01 &lt;= 0<span class="ModelicaKeyword"> then</span>
+      tdo := 0;
+      timeNextEv := -1;
+    <span class="ModelicaKeyword">elseif </span>cmd01 &gt;= 1<span class="ModelicaKeyword"> then</span>
+      tdo := 1;
+      timeNextEv := -1;
+    <span class="ModelicaKeyword">else</span>
+      tdo := 1;
+      timeNextEv := time + cmd01 * Ttdo;
+    <span class="ModelicaKeyword">end if</span>;
+  <span class="ModelicaKeyword">end when</span>;
+  <span class="ModelicaKeyword">when </span>time &gt;= timeNextEv<span class="ModelicaKeyword"> and </span>timeNextEv &gt;= 0<span class="ModelicaKeyword"> then</span>
+    <span class="ModelicaKeyword">if </span>cmd01 &gt; 0<span class="ModelicaKeyword"> and </span>cmd01 &lt; 1<span class="ModelicaKeyword"> then</span>
+      tdo := 0;
+    <span class="ModelicaKeyword">end if</span>;
+  <span class="ModelicaKeyword">end when</span>;
+<span class="ModelicaKeyword">end </span>TDO;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Distributor_uniform<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Controllers.Actuation.PWMI.png" alt="EEB.Controllers.Actuation.Distributor_uniform" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Controllers.Actuation.Distributor_uniform"></a><a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation"
+>EEB.Controllers.Actuation</a>.Distributor_uniform</h2>
+<p>
+<br><img src="EEB.Controllers.Actuationf637a6b1ce169befiformD.png" alt="EEB.Controllers.Actuation.Distributor_uniform">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>ns</td><td>2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>CSi01</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>CSo01[ns]</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> Distributor_uniform
+  <span class="ModelicaKeyword">parameter </span>Integer ns = 2;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> CSi01;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> CSo01[ns];
+  Real csi, cso[ns], cso01tot;
+<span class="ModelicaKeyword">equation </span>
+  csi = CSi01;
+  cso = CSo01;
+  <span class="ModelicaKeyword">for </span>i<span class="ModelicaKeyword"> in </span>1:ns<span class="ModelicaKeyword"> loop</span>
+    cso[i] =<span class="ModelicaFunction"> max</span>(0,<span class="ModelicaFunction"> min</span>(1, 1 -<span class="ModelicaFunction"> abs</span>(csi * ns - i)));
+  <span class="ModelicaKeyword">end for</span>;
+  cso01tot =<span class="ModelicaFunction"> sum</span>(cso);
+<span class="ModelicaKeyword">end </span>Distributor_uniform;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE DaisyChain_uniform<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Controllers.Actuation.PWMI.png" alt="EEB.Controllers.Actuation.DaisyChain_uniform" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Controllers.Actuation.DaisyChain_uniform"></a><a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation"
+>EEB.Controllers.Actuation</a>.DaisyChain_uniform</h2>
+<p>
+<br><img src="EEB.Controllers.Actuationf637a6b1ce169befiformD.png" alt="EEB.Controllers.Actuation.DaisyChain_uniform">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Integer</td><td>ns</td><td>2</td><td>&nbsp;</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>CSi01</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>CSo01[ns]</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> DaisyChain_uniform
+  <span class="ModelicaKeyword">parameter </span>Integer ns = 2;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> CSi01;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> CSo01[ns];
+  Real csi, cso[ns], cso01tot;
+<span class="ModelicaKeyword">equation </span>
+  csi = CSi01;
+  cso = CSo01;
+  <span class="ModelicaKeyword">for </span>i<span class="ModelicaKeyword"> in </span>1:ns<span class="ModelicaKeyword"> loop</span>
+    cso[i] =<span class="ModelicaFunction"> max</span>(0,<span class="ModelicaFunction"> min</span>(1, csi - (i - 1) / ns));
+  <span class="ModelicaKeyword">end for</span>;
+  cso01tot =<span class="ModelicaFunction"> sum</span>(cso);
+<span class="ModelicaKeyword">end </span>DaisyChain_uniform;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SplitRange_01<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Controllers.Actuation.SplitRange_01I.png" alt="EEB.Controllers.Actuation.SplitRange_01" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Controllers.Actuation.SplitRange_01"></a><a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation"
+>EEB.Controllers.Actuation</a>.SplitRange_01</h2>
+<p>
+<br><img src="EEB.Controllers.Actuation.SplitRange_01D.png" alt="EEB.Controllers.Actuation.SplitRange_01">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Real</td><td>DeadZone</td><td>0.1</td><td>&nbsp;</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>CSi01</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>CSo01_pos</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>CSo01_neg</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> SplitRange_01
+  <span class="ModelicaKeyword">parameter </span>Real DeadZone(<span class="ModelicaKeyword">final </span>min = 1e-6, <span class="ModelicaKeyword">final </span>max = 1 - 1e-6) = 0.1;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> CSi01;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> CSo01_pos;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> CSo01_neg;
+  <span class="ModelicaComment">// POS solve([a*dz+b=0,a*1+b=1],[a,b]);</span>
+  <span class="ModelicaComment">// NEG solve([-a*dz+b=0,-a*1+b=1],[a,b]);</span>
+<span class="ModelicaKeyword">protected </span>
+  <span class="ModelicaKeyword">parameter </span>Real a = 1 / (DeadZone - 1);
+  <span class="ModelicaKeyword">parameter </span>Real b = DeadZone / (DeadZone - 1);
+<span class="ModelicaKeyword">equation </span>
+  CSo01_pos =<span class="ModelicaFunction"> max</span>(0,<span class="ModelicaFunction"> min</span>(1, (-a * CSi01) + b));
+  CSo01_neg =<span class="ModelicaFunction"> max</span>(0,<span class="ModelicaFunction"> min</span>(1, a * CSi01 + b));
+<span class="ModelicaKeyword">end </span>SplitRange_01;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE RangeConv_Linear<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Controllers.Actuationc3b1df8a17dd381dinearI.png" alt="EEB.Controllers.Actuation.RangeConv_Linear" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Controllers.Actuation.RangeConv_Linear"></a><a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation"
+>EEB.Controllers.Actuation</a>.RangeConv_Linear</h2>
+<p>
+<br><img src="EEB.Controllers.Actuationc3b1df8a17dd381dinearD.png" alt="EEB.Controllers.Actuation.RangeConv_Linear">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Real</td><td>CSimin</td><td>0.1</td><td>&nbsp;</td></tr>
+<tr><td>Real</td><td>CSimax</td><td>0.9</td><td>&nbsp;</td></tr>
+<tr><td>Real</td><td>CSomin</td><td>0</td><td>&nbsp;</td></tr>
+<tr><td>Real</td><td>CSomax</td><td>1</td><td>&nbsp;</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>CSi</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>CSo</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> RangeConv_Linear
+  <span class="ModelicaKeyword">parameter </span>Real CSimin = 0.1;
+  <span class="ModelicaKeyword">parameter </span>Real CSimax = 0.9;
+  <span class="ModelicaKeyword">parameter </span>Real CSomin = 0;
+  <span class="ModelicaKeyword">parameter </span>Real CSomax = 1;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> CSi;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> CSo;
+<span class="ModelicaKeyword">equation </span>
+  CSo =<span class="ModelicaFunction"> Functions.range_conv_linear</span>(CSi, CSimin, CSimax, CSomin, CSomax);
+<span class="ModelicaKeyword">end </span>RangeConv_Linear;
+</div>
+<hr>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE DaisyChain_InRanges_Out01<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="EEB.Controllers.Actuationc3b1df8a17dd381dinearI.png" alt="EEB.Controllers.Actuation.DaisyChain_InRanges_Out01" align="right" style="border: 1px solid" width="80" height="80">
+<a name="EEB.Controllers.Actuation.DaisyChain_InRanges_Out01"></a><a href="EEB_Controllers_Actuation.html#EEB.Controllers.Actuation"
+>EEB.Controllers.Actuation</a>.DaisyChain_InRanges_Out01</h2>
+<p>
+<br><img src="EEB.Controllers.Actuation2734a23c4db475b2Out01D.png" alt="EEB.Controllers.Actuation.DaisyChain_InRanges_Out01">
+</p>
+<h3>Parameters</h3>
+<table summary="Parameters" class="ModelicaTableParameters">
+<tr><th>Type</th><th>Name</th><th>Default</th><th>Description</th></tr>
+<tr><td>Real</td><td>CSiRB[:]</td><td>{0.1,0.3,0.5,1,3}</td><td>Input range boundaries</td></tr>
+</table>
+<h3>Connectors</h3>
+<table summary="Connectors" class="ModelicaTableConnectors">
+<tr><th>Type</th><th>Name</th><th>Description</th></tr>
+<tr><td>input <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>RealInput</a></td><td>CSi</td><td>&nbsp;</td></tr>
+<tr><td>output <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>RealOutput</a></td><td>CSo[n]</td><td>&nbsp;</td></tr>
+</table>
+<h3>Modelica definition</h3>
+<div class="modelica"><span class="ModelicaKeyword">model</span> DaisyChain_InRanges_Out01
+  <span class="ModelicaKeyword">parameter </span>Real CSiRB[:] = {0.1, 0.3, 0.5, 1, 3} <span class="ModelicaComment">&quot;Input range boundaries&quot;</span>;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealInput"
+>Modelica.Blocks.Interfaces.RealInput</a> CSi;
+  <a href="file:///C:/Program%20Files/Dymola%202020x/Modelica/Library/Modelica%203.2.3/help/Modelica_Blocks_Interfaces.html#Modelica.Blocks.Interfaces.RealOutput"
+>Modelica.Blocks.Interfaces.RealOutput</a> CSo[n];
+<span class="ModelicaKeyword">protected </span>
+  <span class="ModelicaKeyword">parameter </span>Integer n =<span class="ModelicaFunction"> size</span>(CSiRB, 1) - 1;
+<span class="ModelicaKeyword">equation </span>
+  <span class="ModelicaKeyword">for </span>i<span class="ModelicaKeyword"> in </span>1:n<span class="ModelicaKeyword"> loop</span>
+    CSo[i] =<span class="ModelicaFunction"> EEB.Functions.range_conv_linear</span>(CSi, CSiRB[i], CSiRB[i + 1], 0, 1);
+  <span class="ModelicaKeyword">end for</span>;
+<span class="ModelicaKeyword">end </span>DaisyChain_InRanges_Out01;
+</div>
+<hr>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Mon Jun  1 16:09:54 2020.
+</address>
+</body>
+</html>
