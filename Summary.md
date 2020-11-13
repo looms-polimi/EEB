@@ -10,4 +10,6 @@ Caratteristiche peculiari della libreria, che può essere usata con il traduttor
 
 La libreria è stata scritta nel contesto del progetto di ricerca EEB (2014-2017) e in esso è stata estensivamente impiegata come strumento di supporto alle decisioni e alle scelte progettuali e di efficientamento. E' stata poi ulterioremente sviluppata e manutenuta al di là del progetto medesimo, generando anche fork specializzati a specifici problemi applicativi.
 
+Questo repository contiene la libreria e del materiale accessorio relativo agli studi effettuati.
+
 
